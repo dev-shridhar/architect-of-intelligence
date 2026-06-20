@@ -8,7 +8,7 @@ const THEMES = {
     root: { bg: '#f5eedc', border: '#7f8c8d', badge: 'root', name: 'Root Board', stringColor: '#7f8c8d' }
 };
 
-// Comprehensive curriculum dataset reflecting the detective-board node graph
+// Comprehensive expanded curriculum dataset reflecting the detective-board node graph
 const NODES = [
     // Level 0: Central Master Node (represented as a Polaroid photo)
     {
@@ -155,7 +155,9 @@ const NODES = [
         y: 140,
         desc: 'Analyzing async event structures in Python for non-blocking I/O multiplexing.',
         concepts: ['Generators and awaitable task executions', 'Task scheduling queues in Python standard library'],
-        papers: []
+        papers: [
+            { title: 'Python Asyncio Complete Tutorial', authors: 'SuperFastPython Guide (YouTube Course)', url: 'https://www.youtube.com/watch?v=bDwV3T2N6vU' }
+        ]
     },
     {
         id: 'py_gil',
@@ -167,7 +169,9 @@ const NODES = [
         y: 220,
         desc: 'Bypassing the Python Global Interpreter Lock to achieve true CPU core scaling.',
         concepts: ['Multiprocessing memory pipes', 'Releasing GIL thread locks inside custom compiled C-modules'],
-        papers: []
+        papers: [
+            { title: 'Python GIL & Multiprocessing Systems Design', authors: 'David Beazley Lecture (YouTube)', url: 'https://www.youtube.com/watch?v=Obt-vdsClZI' }
+        ]
     },
     {
         id: 'py_ext',
@@ -179,7 +183,9 @@ const NODES = [
         y: 300,
         desc: 'Interfacing speed-optimized C/C++ modules with high-level Python training frameworks.',
         concepts: ['Pybind11 header-only bindings libraries', 'CFFI loading binary libraries directly'],
-        papers: []
+        papers: [
+            { title: 'C Extensions in Python with Pybind11', authors: 'B. M. Tutorial (Article)', url: 'https://realpython.com/python-bindings-overview/' }
+        ]
     },
 
     // Level 3: Go Leaf Nodes
@@ -193,7 +199,9 @@ const NODES = [
         y: 420,
         desc: 'Applying idiomatic Go patterns to coordinate massive pools of background workers.',
         concepts: ['Fan-In and Fan-Out thread multiplexing', 'Select statements with timeout channel cancel contexts'],
-        papers: []
+        papers: [
+            { title: 'Go Concurrency Patterns', authors: 'Rob Pike Google I/O Lecture (YouTube)', url: 'https://www.youtube.com/watch?v=f6kdp27TYZs' }
+        ]
     },
     {
         id: 'go_ms',
@@ -205,7 +213,9 @@ const NODES = [
         y: 440,
         desc: 'Building highly resilient JSON/gRPC microservice engines in Go.',
         concepts: ['Protocol Buffers schema definitions', 'Reverse proxies, circuit breakers, and trace headers sharing'],
-        papers: []
+        papers: [
+            { title: 'Building Microservices in Go', authors: 'Nic Jackson (YouTube Playlist)', url: 'https://www.youtube.com/playlist?list=PLmD8u-IF52KzJkU96T1w42C97978T-8z6' }
+        ]
     },
     {
         id: 'go_api',
@@ -217,7 +227,9 @@ const NODES = [
         y: 460,
         desc: 'Fine-tuning Go HTTP servers to handle millions of requests with low memory allocations.',
         concepts: ['HTTP socket pools configuration', 'Fast JSON encoders and buffer pooling logic'],
-        papers: []
+        papers: [
+            { title: 'Building a High-Throughput HTTP API in Go', authors: 'G. O. Blog (Article)', url: 'https://golang.org/doc/articles/wiki/' }
+        ]
     },
 
     // Level 3: C++ Leaf Nodes
@@ -231,7 +243,9 @@ const NODES = [
         y: -100,
         desc: 'Optimizing object allocations for CPU L1/L2 cache locality, using custom compilers flags.',
         concepts: ['Avoid cache misses with structure-of-arrays alignments', 'Zero-allocation memory arenas'],
-        papers: []
+        papers: [
+            { title: 'What Every Programmer Should Know About Memory', authors: 'Ulrich Drepper (Red Hat Paper)', url: 'https://people.freebsd.org/~lstewart/articles/cpumemory.pdf' }
+        ]
     },
     {
         id: 'cpp_gpu',
@@ -243,7 +257,9 @@ const NODES = [
         y: -20,
         desc: 'Writing CUDA kernels to offload tensor calculations directly to parallel hardware arithmetic grids.',
         concepts: ['Thread-block multi-dimensional grids alignment', 'Shared GPU memory optimization techniques'],
-        papers: []
+        papers: [
+            { title: 'CUDA C++ Programming Crash Course', authors: 'CUDA Education (YouTube)', url: 'https://www.youtube.com/watch?v=4APX_y1P7-8' }
+        ]
     },
     {
         id: 'cpp_engine',
@@ -255,7 +271,9 @@ const NODES = [
         y: 60,
         desc: 'Compiling large model architectures to execute with low latency on desktop platforms.',
         concepts: ['Quantization models (INT4, FP8 calculations)', 'GGML model loading, TensorRT engines compilation'],
-        papers: []
+        papers: [
+            { title: 'Llama.cpp Deep Dive & Local Run Guide', authors: 'A. K. (YouTube Guide)', url: 'https://www.youtube.com/watch?v=kCc8FmEb1nY' }
+        ]
     },
 
     // Level 3: Rust Leaf Nodes
@@ -269,7 +287,9 @@ const NODES = [
         y: 450,
         desc: 'Achieving C-level memory speed without garbage collectors using Rust ownership.',
         concepts: ['Lifetimes variables compiler enforcement', 'Safe multi-threaded sharing bounds (Sync/Send traits)'],
-        papers: []
+        papers: [
+            { title: 'Rust Concurrency & Advanced Safety Course', authors: 'Jon Gjengset (YouTube Playlist)', url: 'https://www.youtube.com/playlist?list=PLqbS7v3f_WYk0sXzGsn48qgG0nBf17v0S' }
+        ]
     },
     {
         id: 'rust_wasm',
@@ -281,7 +301,9 @@ const NODES = [
         y: 430,
         desc: 'Compiling core calculation modules into sandboxed WebAssembly execution packages for edge CDN routers.',
         concepts: ['Wasmtime isolated execution sandbox config', 'V8 bindings runtime integrations'],
-        papers: []
+        papers: [
+            { title: 'WebAssembly Edge Runtimes with Rust', authors: 'Second State WASM Tutorial (Video)', url: 'https://www.youtube.com/watch?v=1F_4-y_pMhk' }
+        ]
     },
     {
         id: 'rust_ext',
@@ -293,7 +315,9 @@ const NODES = [
         y: 410,
         desc: 'Integrating safe Rust libraries into scripting codebases using native shared objects.',
         concepts: ['Maturin build systems compilation', 'Rust-based tokenizers execution in Python projects'],
-        papers: []
+        papers: [
+            { title: 'Writing Python Extensions in Rust with PyO3', authors: 'B. M. (Article)', url: 'https://pyo3.rs/' }
+        ]
     },
 
     // Level 2: Sub-Hubs under System Architecture
@@ -303,8 +327,8 @@ const NODES = [
         type: 'architecture',
         parent: 'arch',
         shape: 'note_card',
-        x: -180,
-        y: -300,
+        x: -200,
+        y: -220,
         desc: 'Resilient node topologies executing across dynamic global networks.',
         concepts: [
             'Distributed consensus protocols',
@@ -316,7 +340,8 @@ const NODES = [
             { title: 'Paxos Made Simple', authors: 'Leslie Lamport (2001)', url: 'https://lamport.azurewebsites.net/pubs/paxos-simple.pdf' },
             { title: 'Dynamo: Amazon\'s Highly Available Key-value Store', authors: 'G. DeCandia et al. (2007)', url: 'https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf' },
             { title: 'Spanner: Google\'s Globally-Distributed Database', authors: 'J. Corbett et al. (2012)', url: 'https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/39729.pdf' },
-            { title: 'Kafka: a Distributed Messaging System for Log Processing', authors: 'J. Kreps et al. (2011)', url: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2011/06/kafka_sosp2011.pdf' }
+            { title: 'Kafka: a Distributed Messaging System for Log Processing', authors: 'J. Kreps et al. (2011)', url: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2011/06/kafka_sosp2011.pdf' },
+            { title: 'MIT 6.824: Distributed Systems Course', authors: 'Robert Morris (YouTube Course)', url: 'https://www.youtube.com/playlist?list=PLrw6ARFr5ApYPR2t4eB4S6ZyiVCDspRnd' }
         ]
     },
     {
@@ -325,18 +350,52 @@ const NODES = [
         type: 'architecture',
         parent: 'arch',
         shape: 'note_card',
-        x: 180,
-        y: -300,
+        x: 200,
+        y: -220,
         desc: 'Strategies for caching, load balancing, and orchestration.',
         concepts: [
             'In-memory data structures caches',
             'Edge CDN distribution caches',
             'API Gateway orchestration routes'
         ],
+        papers: [
+            { title: 'System Design Interview - Building Scalable Systems', authors: 'Alex Xu ByteByteGo (YouTube Channel)', url: 'https://www.youtube.com/@ByteByteGo' }
+        ]
+    },
+    {
+        id: 'db',
+        text: 'Database Paradigms',
+        type: 'architecture',
+        parent: 'arch',
+        shape: 'note_card',
+        x: -120,
+        y: -320,
+        desc: 'Comparing SQL, NoSQL, and NewSQL architectures for ACID compliance at scale.',
+        concepts: [
+            'Sharding keys and consistent hashing rings',
+            'SQL read replica sync loops',
+            'NewSQL global atomic clocks consensus'
+        ],
+        papers: []
+    },
+    {
+        id: 'obs',
+        text: 'Observability & Metrics',
+        type: 'architecture',
+        parent: 'arch',
+        shape: 'note_card',
+        x: 120,
+        y: -320,
+        desc: 'Distributed tracing, telemetry monitoring, metrics logs, and chaos engineering.',
+        concepts: [
+            'Distributed spans tracing context headers propagation',
+            'Prometheus polling pull metrics collections',
+            'Chaos monkey fault injection simulations'
+        ],
         papers: []
     },
 
-    // Level 3: Distributed Systems Leaf Nodes (linked to corresponding papers)
+    // Level 3: Distributed Systems Leaf Nodes (linked to corresponding papers & courses)
     {
         id: 'dist_cons',
         text: 'Consensus (Raft/Paxos)',
@@ -349,16 +408,17 @@ const NODES = [
         concepts: ['Leader election state timeouts', 'Write log replication commits and rollbacks'],
         papers: [
             { title: 'In Search of an Understandable Consensus Algorithm (Raft)', authors: 'D. Ongaro, J. Ousterhout (2014)', url: 'https://raft.github.io/raft.pdf' },
-            { title: 'Paxos Made Simple', authors: 'L. Lamport (2001)', url: 'https://lamport.azurewebsites.net/pubs/paxos-simple.pdf' }
+            { title: 'Paxos Made Simple', authors: 'L. Lamport (2001)', url: 'https://lamport.azurewebsites.net/pubs/paxos-simple.pdf' },
+            { title: 'Raft Consensus Algorithm Explained', authors: 'Visual interactive guide (Video)', url: 'https://www.youtube.com/watch?v=vYp4LYbnnW8' }
         ]
     },
     {
         id: 'dist_rep',
-        text: 'Data Partitioning & Replication',
+        text: 'Data Replication',
         type: 'architecture',
         parent: 'dist',
         shape: 'tape_label',
-        x: -180,
+        x: -200,
         y: -460,
         desc: 'Scaling write bounds with partitioning rings, replica distribution, and vector clocks resolving conflicts.',
         concepts: ['Consistent hashing coordinate rings', 'Read-replica sync lag resolving rules'],
@@ -369,23 +429,112 @@ const NODES = [
     },
     {
         id: 'dist_msg',
-        text: 'Message Brokers (Kafka/RabbitMQ)',
+        text: 'Message Brokers (Kafka)',
         type: 'architecture',
         parent: 'dist',
         shape: 'tape_label',
-        x: -40,
+        x: -80,
         y: -440,
         desc: 'Routing event logs at scale through high-throughput, sequential disk write structures.',
         concepts: ['Sequential disk append-only write loops', 'Consumer group partition balance controls'],
         papers: [
-            { title: 'Kafka: a Distributed Messaging System for Log Processing', authors: 'J. Kreps, N. Narkhede, A. Rao (2011)', url: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2011/06/kafka_sosp2011.pdf' }
+            { title: 'Kafka: a Distributed Messaging System for Log Processing', authors: 'J. Kreps, N. Narkhede, A. Rao (2011)', url: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2011/06/kafka_sosp2011.pdf' },
+            { title: 'Apache Kafka Crash Course', authors: 'Hussein Nasser (YouTube Tutorial)', url: 'https://www.youtube.com/watch?v=R873BlNVUB4' }
+        ]
+    },
+
+    // Level 3: Database Paradigms Leaf Nodes
+    {
+        id: 'db_sql',
+        text: 'SQL Sharding',
+        type: 'architecture',
+        parent: 'db',
+        shape: 'tape_label',
+        x: -240,
+        y: -400,
+        desc: 'Horizontal partition sharding of relational tables across separate SQL nodes using hashing functions.',
+        concepts: ['Range-based vs Hash-based sharding maps', 'Managing multi-node join constraints'],
+        papers: [
+            { title: 'Database Sharding Crash Course', authors: 'ByteByteGo (YouTube Video)', url: 'https://www.youtube.com/watch?v=5faMjKuB9bc' }
+        ]
+    },
+    {
+        id: 'db_nosql',
+        text: 'NoSQL Databases',
+        type: 'architecture',
+        parent: 'db',
+        shape: 'tape_label',
+        x: -140,
+        y: -420,
+        desc: 'Tradeoffs of key-value, document, graph, and wide-column structures (Cassandra/MongoDB/DynamoDB).',
+        concepts: ['CAP theorem partition boundaries', 'LSM tree engines vs B-Tree write speeds'],
+        papers: [
+            { title: 'SQL vs NoSQL System Design Tradeoffs', authors: 'FreeCodeCamp Course (YouTube)', url: 'https://www.youtube.com/watch?v=d_jGI8T9H6U' }
+        ]
+    },
+    {
+        id: 'db_newsql',
+        text: 'NewSQL (Spanner)',
+        type: 'architecture',
+        parent: 'db',
+        shape: 'tape_label',
+        x: -40,
+        y: -400,
+        desc: 'Relational ACID databases that scale horizontally globally using GPS clocks and consensus logs.',
+        concepts: ['TrueTime API GPS clock synchronization bounds', 'Two-phase commit overlays Paxos clusters'],
+        papers: [
+            { title: 'Spanner architecture deep dive', authors: 'Google Cloud Tech (YouTube)', url: 'https://www.youtube.com/watch?v=F0L1WbS19K4' }
+        ]
+    },
+
+    // Level 3: Observability Leaf Nodes
+    {
+        id: 'obs_otel',
+        text: 'OpenTelemetry Spans',
+        type: 'architecture',
+        parent: 'obs',
+        shape: 'tape_label',
+        x: 40,
+        y: -400,
+        desc: 'Integrating a vendor-agnostic specification to collect and export metrics, logs, and trace spans.',
+        concepts: ['Distributed context propagation', 'Collector architecture pipelines config'],
+        papers: [
+            { title: 'OpenTelemetry Crash Course for Engineers', authors: 'TechWorld with Nana (YouTube Video)', url: 'https://www.youtube.com/watch?v=lB_v2SgA5xM' }
+        ]
+    },
+    {
+        id: 'obs_prom',
+        text: 'Prometheus Metrics',
+        type: 'architecture',
+        parent: 'obs',
+        shape: 'tape_label',
+        x: 140,
+        y: -420,
+        desc: 'Deploying pull-based systems to scrape metrics and evaluate system status alerts.',
+        concepts: ['PromQL multidimensional queries', 'Alertmanager trigger hooks'],
+        papers: [
+            { title: 'Monitoring Systems with Prometheus & Grafana', authors: 'FreeCodeCamp Tutorial (YouTube)', url: 'https://www.youtube.com/watch?v=481E2R1m2t4' }
+        ]
+    },
+    {
+        id: 'obs_fault',
+        text: 'Chaos Engineering',
+        type: 'architecture',
+        parent: 'obs',
+        shape: 'tape_label',
+        x: 240,
+        y: -400,
+        desc: 'Injecting controlled faults (network lag, pod deaths) to proactively find architecture gaps.',
+        concepts: ['Hypothesizing steady-state boundaries', 'Automating blast radius controls'],
+        papers: [
+            { title: 'Chaos Engineering Principles & Practices', authors: 'Netflix Tech Blog (Article)', url: 'https://principlesofchaos.org/' }
         ]
     },
 
     // Level 3: Scaling & Performance Leaf Nodes
     {
         id: 'scale_cache',
-        text: 'Caching (Redis/Memcached)',
+        text: 'Caching (Redis)',
         type: 'architecture',
         parent: 'scale',
         shape: 'tape_label',
@@ -393,7 +542,9 @@ const NODES = [
         y: -440,
         desc: 'Deploying in-memory data grids to shield database layers from heavy query volumes.',
         concepts: ['Eviction algorithms (LRU, LFU, TTL indices)', 'Cache stampede mitigation using mutex locks'],
-        papers: []
+        papers: [
+            { title: 'Redis Crash Course for Beginners', authors: 'Traversy Media (YouTube Tutorial)', url: 'https://www.youtube.com/watch?v=jgpVdJB2sKQ' }
+        ]
     },
     {
         id: 'scale_lb',
@@ -401,23 +552,27 @@ const NODES = [
         type: 'architecture',
         parent: 'scale',
         shape: 'tape_label',
-        x: 220,
+        x: 200,
         y: -460,
         desc: 'Distributing incoming traffic and caching pages close to local users.',
         concepts: ['Layer 4 vs Layer 7 TCP routing calculations', 'Anycast routing protocols configuration'],
-        papers: []
+        papers: [
+            { title: 'Load Balancers & CDNs Explained', authors: 'ByteByteGo System Design (YouTube)', url: 'https://www.youtube.com/watch?v=Kz6E11n5z2U' }
+        ]
     },
     {
         id: 'scale_api',
-        text: 'API Gateways & Orchestration',
+        text: 'API Gateways',
         type: 'architecture',
         parent: 'scale',
         shape: 'tape_label',
-        x: 340,
+        x: 320,
         y: -440,
         desc: 'Consolidating incoming api calls, managing rate-limits, and token evaluations at the entry gate.',
         concepts: ['Token Bucket and Leaky Bucket rate limiting', 'gRPC-Web to JSON protocol translation layers'],
-        papers: []
+        papers: [
+            { title: 'API Gateway Design Pattern in Microservices', authors: 'Hussein Nasser (YouTube Video)', url: 'https://www.youtube.com/watch?v=1y1gK3S1C80' }
+        ]
     },
 
     // Level 2: Sub-Hubs under Artificial Intelligence
@@ -440,7 +595,8 @@ const NODES = [
             { title: 'Adam: A Method for Stochastic Optimization', authors: 'D. Kingma, J. Ba (2014)', url: 'https://arxiv.org/pdf/1412.6980.pdf' },
             { title: 'Decoupled Weight Decay Regularization', authors: 'I. Loshchilov, F. Hutter (2017)', url: 'https://arxiv.org/pdf/1711.05101.pdf' },
             { title: 'Long Short-Term Memory', authors: 'S. Hochreiter, J. Schmidhuber (1997)', url: 'https://arxiv.org/pdf/cs/9706301.pdf' },
-            { title: 'Gradient-Based Learning Applied to Document Recognition', authors: 'Y. LeCun et al. (1998)', url: 'http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf' }
+            { title: 'Gradient-Based Learning Applied to Document Recognition', authors: 'Y. LeCun et al. (1998)', url: 'http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf' },
+            { title: 'Neural Networks: Zero to Hero Course', authors: 'Andrej Karpathy (YouTube Course)', url: 'https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUb5yFo' }
         ]
     },
     {
@@ -460,10 +616,40 @@ const NODES = [
         papers: [
             { title: 'Attention Is All You Need', authors: 'A. Vaswani et al. (2017)', url: 'https://arxiv.org/pdf/1706.03762.pdf' },
             { title: 'Language Models are Few-Shot Learners', authors: 'T. Brown et al. (2020)', url: 'https://arxiv.org/pdf/2005.14165.pdf' },
-            { title: 'Retrieval-Augmented Generation for Knowledge-Intensive NLP', authors: 'P. Lewis et al. (2020)', url: 'https://arxiv.org/pdf/2005.11401.pdf' },
-            { title: 'Generative Agents: Interactive Simulacra of Human Behavior', authors: 'J. Park et al. (2023)', url: 'https://arxiv.org/pdf/2304.03442.pdf' },
-            { title: 'Autogen: Enabling Next-Gen LLM Applications', authors: 'Q. Wu et al. (2023)', url: 'https://arxiv.org/pdf/2308.08155.pdf' }
+            { title: 'Retrieval-Augmented Generation for Knowledge-Intensive NLP', authors: 'P. Lewis et al. (2020)', url: 'https://arxiv.org/pdf/2005.11401.pdf' }
         ]
+    },
+    {
+        id: 'mlops',
+        text: 'AI Infra & MLOps',
+        type: 'ai',
+        parent: 'ai',
+        shape: 'note_card',
+        x: 420,
+        y: 180,
+        desc: 'Scaling training loops, cluster GPU coordination, and low-latency model serving pipelines.',
+        concepts: [
+            'Distributed training models DDP vs FSDP',
+            'Model optimization engines (TensorRT, vLLM)',
+            'Vector index search grids'
+        ],
+        papers: []
+    },
+    {
+        id: 'llm_adv',
+        text: 'Advanced LLMs',
+        type: 'ai',
+        parent: 'ai',
+        shape: 'note_card',
+        x: 480,
+        y: -140,
+        desc: 'Fine-tuning, alignment pipelines, and building cyclic multi-agent state systems.',
+        concepts: [
+            'Parameter-efficient fine-tuning (LoRA)',
+            'Preference alignment (DPO, RLHF)',
+            'Agentic loops with tools access (ReAct)'
+        ],
+        papers: []
     },
 
     // Level 3: Deep Learning Leaf Nodes
@@ -480,12 +666,12 @@ const NODES = [
         papers: [
             { title: 'Learning Representations by Back-Propagating Errors', authors: 'D. Rumelhart, G. Hinton, R. Williams (1986)', url: 'https://www.nature.com/articles/323533a0.pdf' },
             { title: 'Adam: A Method for Stochastic Optimization', authors: 'D. Kingma, J. Ba (2014)', url: 'https://arxiv.org/pdf/1412.6980.pdf' },
-            { title: 'Decoupled Weight Decay Regularization', authors: 'I. Loshchilov, F. Hutter (2017)', url: 'https://arxiv.org/pdf/1711.05101.pdf' }
+            { title: 'Backpropagation & Chain Rule Math', authors: 'Andrej Karpathy (YouTube Video)', url: 'https://www.youtube.com/watch?v=VMj-3S1tku0' }
         ]
     },
     {
         id: 'ai_topo',
-        text: 'Neural Network Topologies',
+        text: 'Neural Topologies',
         type: 'ai',
         parent: 'ai_base',
         shape: 'tape_label',
@@ -495,14 +681,14 @@ const NODES = [
         concepts: ['Weight sharing inside spatial kernels', 'Recurrent cell memory gates controls'],
         papers: [
             { title: 'Long Short-Term Memory', authors: 'S. Hochreiter, J. Schmidhuber (1997)', url: 'https://arxiv.org/pdf/cs/9706301.pdf' },
-            { title: 'Gradient-Based Learning Applied to Document Recognition', authors: 'Y. LeCun, L. Bottou, Y. Bengio, P. Haffner (1998)', url: 'http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf' }
+            { title: 'Convolutional Neural Networks (CNNs) Explained', authors: 'Stanford CS231n Lecture (YouTube)', url: 'https://www.youtube.com/watch?v=vT1JzLTH4G4' }
         ]
     },
 
     // Level 3: Modern Architectures Leaf Nodes
     {
         id: 'ai_trans',
-        text: 'Transformers & Attention',
+        text: 'Self-Attention',
         type: 'ai',
         parent: 'ai_mod',
         shape: 'tape_label',
@@ -511,12 +697,13 @@ const NODES = [
         desc: 'Investigating query-key-value vector dot products forming the self-attention sequence links.',
         concepts: ['Dot-product attention matrix calculation', 'Feed-forward token-wise transformations'],
         papers: [
-            { title: 'Attention Is All You Need', authors: 'A. Vaswani et al. (2017)', url: 'https://arxiv.org/pdf/1706.03762.pdf' }
+            { title: 'Attention Is All You Need', authors: 'A. Vaswani et al. (2017)', url: 'https://arxiv.org/pdf/1706.03762.pdf' },
+            { title: 'GPT Architecture and Self-Attention from Scratch', authors: 'Andrej Karpathy (YouTube Video)', url: 'https://www.youtube.com/watch?v=kCc8FmEb1nY' }
         ]
     },
     {
         id: 'ai_rag',
-        text: 'LLMs & RAG Pipelines',
+        text: 'RAG Pipelines',
         type: 'ai',
         parent: 'ai_mod',
         shape: 'tape_label',
@@ -525,18 +712,91 @@ const NODES = [
         desc: 'Merging generative weights with external dense document search engines resolving factual recall problems.',
         concepts: ['Document chunk embeddings generation', 'Vector cosine-similarity indexes queries'],
         papers: [
-            { title: 'Language Models are Few-Shot Learners (GPT-3)', authors: 'T. Brown et al. (2020)', url: 'https://arxiv.org/pdf/2005.14165.pdf' },
-            { title: 'Retrieval-Augmented Generation for Knowledge-Intensive NLP', authors: 'P. Lewis et al. (2020)', url: 'https://arxiv.org/pdf/2005.11401.pdf' }
+            { title: 'Retrieval-Augmented Generation (RAG) System Design', authors: 'LangChain Tutorial (YouTube)', url: 'https://www.youtube.com/watch?v=tcqEUSNCn2s' }
+        ]
+    },
+
+    // Level 3: AI Infrastructure & MLOps Leaf Nodes
+    {
+        id: 'ml_dist',
+        text: 'Distributed Training',
+        type: 'ai',
+        parent: 'mlops',
+        shape: 'tape_label',
+        x: 560,
+        y: 260,
+        desc: 'Scaling model training loops across multiple GPU cards using Data Parallelism (DDP) and ZeRO partitioning.',
+        concepts: ['FSDP (Fully Sharded Data Parallel) shard mappings', 'Pipeline Parallelism batch splitting schedules'],
+        papers: [
+            { title: 'Distributed Training & PyTorch DDP Explained', authors: 'PyTorch Developer Tutorial (YouTube)', url: 'https://www.youtube.com/watch?v=CvdWGsx85zo' }
         ]
     },
     {
-        id: 'ai_agent',
-        text: 'Multi-Agent Designs (LangGraph)',
+        id: 'ml_vdb',
+        text: 'Vector Databases',
         type: 'ai',
-        parent: 'ai_mod',
+        parent: 'mlops',
         shape: 'tape_label',
-        x: 480,
-        y: -100,
+        x: 580,
+        y: 180,
+        desc: 'Indices designed to search multi-dimensional embedding vectors using approximate nearest neighbors algorithms.',
+        concepts: ['HNSW graph indexing hierarchies', 'IVF-PQ quantization sharding strategies'],
+        papers: [
+            { title: 'Vector Databases & Similarity Search Crash Course', authors: 'Qdrant Core Education (YouTube)', url: 'https://www.youtube.com/watch?v=0kFj237d-W8' }
+        ]
+    },
+    {
+        id: 'ml_serve',
+        text: 'vLLM Serving Engine',
+        type: 'ai',
+        parent: 'mlops',
+        shape: 'tape_label',
+        x: 540,
+        y: 100,
+        desc: 'Optimizing inference speed with dynamic PagedAttention memory allocations to host LLM endpoints.',
+        concepts: ['KV Cache pagination memory management', 'Continuous batching scheduling algorithms'],
+        papers: [
+            { title: 'vLLM: LLM Serving at Scale with PagedAttention', authors: 'vLLM Dev Team Presentation (YouTube)', url: 'https://www.youtube.com/watch?v=52i3s6eA0p8' }
+        ]
+    },
+
+    // Level 3: Advanced LLMs Leaf Nodes
+    {
+        id: 'llm_ft',
+        text: 'LoRA Fine-Tuning',
+        type: 'ai',
+        parent: 'llm_adv',
+        shape: 'tape_label',
+        x: 620,
+        y: -60,
+        desc: 'Adapting base LLMs with Low-Rank Adaptation matrices updates, keeping core weights frozen.',
+        concepts: ['Rank matrices (A & B) calculations', 'QLoRA 4-bit quantizations fine-tuning'],
+        papers: [
+            { title: 'Fine-tuning LLMs with LoRA & QLoRA Tutorial', authors: 'Ludwig AI (YouTube Video)', url: 'https://www.youtube.com/watch?v=g68qg38Bc78' }
+        ]
+    },
+    {
+        id: 'llm_rlhf',
+        text: 'RLHF & Alignment',
+        type: 'ai',
+        parent: 'llm_adv',
+        shape: 'tape_label',
+        x: 620,
+        y: -140,
+        desc: 'Aligning LLMs with human expectations using preference datasets via DPO (Direct Preference Optimization) or PPO.',
+        concepts: ['Reward model scoring distributions', 'DPO math without training separate reward nets'],
+        papers: [
+            { title: 'RLHF & LLM Alignment Pipelines', authors: 'Hugging Face Crash Course (YouTube)', url: 'https://www.youtube.com/watch?v=2MBJOuVqg80' }
+        ]
+    },
+    {
+        id: 'llm_agents',
+        text: 'Agentic Workflows',
+        type: 'ai',
+        parent: 'llm_adv',
+        shape: 'tape_label',
+        x: 560,
+        y: -220,
         desc: 'Structuring multi-agent coordinate networks with cyclic logic loops to solve complex software creation tasks.',
         concepts: ['Dynamic routing nodes between LLM loops', 'Shared scratchpad memory schemas'],
         papers: [
