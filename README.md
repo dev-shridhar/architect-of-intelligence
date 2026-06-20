@@ -12,6 +12,10 @@ Modern intelligent applications are no longer just model weights running in a sa
 mindmap
   root((System Architect<br>& AI Engineer))
     Systems Programming
+      Python
+        Asyncio Concurrency
+        GIL Workarounds
+        C-Extension Glue
       Go
         Concurrency Patterns
         Microservices
@@ -40,21 +44,26 @@ mindmap
       Modern Architectures
         Transformers & Attention
         LLMs & RAG Pipelines
-        Agentic Workflows (LangGraph)
+        Multi-Agent Designs (LangGraph)
 ```
 
 ---
 
 ## 📂 Repository Index
 
-*   [research_papers/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/research_papers/) - Core research papers that defined distributed systems and AI.
+*   [research_papers/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/research_papers/) - Foundational research papers that defined distributed systems and AI.
+    *   [README.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/research_papers/README.md) - Subdirectory index.
     *   [algorithms/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/research_papers/algorithms/) - Key algorithms (Consensus, Optimization, Attention).
     *   [architectures/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/research_papers/architectures/) - Foundational deep learning and distributed system architectures.
 *   [articles/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/) - Deep-dives into key concepts.
+    *   [README.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/README.md) - Subdirectory index.
     *   [distributed_systems.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/distributed_systems.md) - Consensus, replication, and data models.
     *   [neural_network_foundations.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/neural_network_foundations.md) - Deep learning backpropagation and optimization.
     *   [system_scaling.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/system_scaling.md) - Scaling databases, caching, and APIs.
+    *   [multi_agent_design.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/multi_agent_design.md) - Multi-agent communication patterns and orchestration.
 *   [languages/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/languages/) - Guides and code patterns in systems languages.
+    *   [README.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/languages/README.md) - Subdirectory index.
+    *   [python/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/languages/python/) - Concurrency, GIL bypass, memory generators, and AI bindings.
     *   [go/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/languages/go/) - Concurrency pipelines, channels, and microservices patterns.
     *   [cpp/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/languages/cpp/) - RAII, memory management, and AI inference optimization.
     *   [rust/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/languages/rust/) - Async Tokio runtimes, safety patterns, and WASM runtimes.
@@ -74,6 +83,7 @@ mindmap
 3.  **"Build a Large Language Model (From Scratch)"** by Sebastian Raschka (Great step-by-step implementation guide to understand transformer internals).
 
 ### 💻 Systems Programming
+*   **Python**: *"Fluent Python"* by Luciano Ramalho & *"High Performance Python"* by Micha Gorelick.
 *   **Go**: *"The Go Programming Language"* by Alan A. A. Donovan & Brian W. Kernighan.
 *   **C++**: *"Effective Modern C++"* by Scott Meyers.
 *   **Rust**: *"Programming Rust: Fast, Safe Systems Development"* by Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall.
@@ -83,6 +93,7 @@ mindmap
 ## 📈 Suggested Learning Roadmap
 
 ### Phase 1: High-Performance Languages (Month 1-2)
+*   Leverage **Python** for rapid prototyping, data pipeline design, and high-level AI modeling.
 *   Master concurrency model in **Go** (goroutines/channels) for building quick, reliable APIs.
 *   Learn memory models and safety guarantees in **Rust** (borrow checker, ownership) for writing robust system modules.
 *   Understand RAII and performance tuning in **C++** for writing highly optimized AI inference engines.
@@ -95,4 +106,4 @@ mindmap
 ### Phase 3: AI Engineering & Inference (Month 5-6)
 *   Build a deep understanding of standard neural network architectures (MLPs, CNNs, Transformers).
 *   Learn optimization techniques for serving AI models: quantization, pruning, TensorRT, and batching.
-*   Build agentic workflows and orchestrate memory models in LLM applications.
+*   Build multi-agent designs and orchestrate memory models in LLM applications using stateful graphs.
