@@ -21,7 +21,7 @@ const NODES = [
         r: 65,
         desc: 'The central investigation coordinate bridging Systems Scale and AI Models. Focuses on deep systems understanding coupled with state-of-the-art machine learning integration.',
         concepts: [
-            '100-Day Study Plan core milestones',
+            'Systems Architecture mastery targets',
             'Full Systems Engineering execution',
             'Advanced Model orchestrations & inference bindings'
         ],

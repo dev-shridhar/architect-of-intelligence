@@ -1,8 +1,8 @@
 /* Vintage Color Palette & Design Tokens */
 :root {
     --cork-bg: #1e1510;
-    --paper-light: #fbf6ec; /* Age-stained yellowed paper */
-    --paper-dark: #f5eedc;
+    --paper-light: #eedeb0; /* Age-stained yellowed paper */
+    --paper-dark: #dfcca2;
     --ink-dark: #1c1c1e;   /* Authentic printers ink */
     --ink-faded: #48484a;
     --border-paper: rgba(0, 0, 0, 0.15);
@@ -263,8 +263,8 @@ body {
     bottom: 24px;
     width: 600px;
     background-color: var(--paper-light);
-    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(220, 200, 170, 0.1) 100%);
-    border: 8px solid #fbf6ec; /* Double paper framing */
+    background-image: radial-gradient(circle, rgba(240, 220, 180, 0.15) 0%, rgba(138, 110, 80, 0.15) 100%);
+    border: 8px solid var(--paper-light); /* Double paper framing */
     outline: 2px solid #d4cbb8;
     box-shadow: -15px 0 35px rgba(0, 0, 0, 0.6);
     border-radius: 2px;
@@ -324,7 +324,7 @@ body {
 
 .newspaper-header h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 32px;
+    font-size: 38px;
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
@@ -376,7 +376,7 @@ body {
     padding: 3px 10px;
     border-radius: 2px;
     font-family: 'Courier Prime', monospace;
-    font-size: 9px;
+    font-size: 11px;
     font-weight: bold;
     text-transform: uppercase;
     border: 1px solid var(--ink-dark);
@@ -384,13 +384,13 @@ body {
 
 .tag-meta {
     font-family: 'Courier Prime', monospace;
-    font-size: 9px;
+    font-size: 11px;
     color: var(--ink-faded);
 }
 
 .lead-paragraph {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
     color: var(--ink-dark);
     margin-bottom: 20px;
@@ -400,7 +400,7 @@ body {
 
 .lead-paragraph::first-letter {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 44px;
+    font-size: 52px;
     font-weight: 800;
     float: left;
     margin-top: 4px;
@@ -412,7 +412,7 @@ body {
 /* Newspaper Subheadings */
 .newspaper-subheading {
     font-family: 'Playfair Display', serif;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     border-bottom: 2px solid var(--ink-dark);
@@ -430,7 +430,7 @@ body {
 
 .concept-list li {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.5;
     color: var(--ink-dark);
     margin-bottom: 8px;
@@ -472,7 +472,7 @@ body {
 
 .paper-title {
     font-family: 'Playfair Display', serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     color: var(--ink-dark);
     margin-bottom: 4px;
@@ -481,7 +481,7 @@ body {
 
 .paper-author {
     font-family: 'Courier Prime', monospace;
-    font-size: 9px;
+    font-size: 11px;
     color: var(--ink-faded);
 }
 
