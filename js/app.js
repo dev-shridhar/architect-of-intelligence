@@ -73,8 +73,8 @@ const NODES = [
         type: 'ai',
         parent: 'root',
         shape: 'newspaper_clipping',
-        x: 220,
-        y: 100,
+        x: 218,
+        y: 110,
         desc: 'Investigating machine learning foundations, network backpropagation, neural layer configurations, self-attention blocks, and agent-based state machines.',
         concepts: [
             'Adaptive learning rates optimization (Adam/SGD)',
@@ -82,7 +82,7 @@ const NODES = [
             'Cyclic loops multi-agent execution graphs'
         ],
         papers: [
-            { title: 'AI for Everyone Course', authors: 'Andrew Ng / DeepLearning.AI (Official Course)', url: 'https://www.deeplearning.ai/courses/ai-for-everyone/' }
+            { title: 'AI for Everyone Course', authors: 'Andrew Ng / DeepLearning.AI (Official Course)', url: 'https://www.coursera.org/learn/ai-for-everyone' }
         ]
     },
 
@@ -111,8 +111,8 @@ const NODES = [
         type: 'programming',
         parent: 'prog',
         shape: 'note_card',
-        x: -240,
-        y: 280,
+        x: -243,
+        y: 279,
         desc: 'Google Go concurrency engines, routine pipelines, and network servers.',
         concepts: [
             'Goroutines and stack segmentation scheduling',
@@ -129,8 +129,8 @@ const NODES = [
         type: 'programming',
         parent: 'prog',
         shape: 'note_card',
-        x: -320,
-        y: -40,
+        x: -324,
+        y: -25,
         desc: 'High-speed object-oriented compiler targets, pointer arithmetics, and model compilation.',
         concepts: [
             'RAII memory management boundaries',
@@ -147,8 +147,8 @@ const NODES = [
         type: 'programming',
         parent: 'prog',
         shape: 'note_card',
-        x: -80,
-        y: 320,
+        x: -77,
+        y: 321,
         desc: 'Compile-safe structures, zero-cost abstractions, and WebAssembly targets.',
         concepts: [
             'Borrow Checker compiler bounds safety rules',
@@ -181,7 +181,7 @@ const NODES = [
         type: 'programming',
         parent: 'python',
         shape: 'tape_label',
-        x: -540,
+        x: -555,
         y: 220,
         desc: 'Bypassing the Python Global Interpreter Lock to achieve true CPU core scaling.',
         concepts: ['Multiprocessing memory pipes', 'Releasing GIL thread locks inside custom compiled C-modules'],
@@ -211,7 +211,7 @@ const NODES = [
         type: 'programming',
         parent: 'go',
         shape: 'tape_label',
-        x: -340,
+        x: -365,
         y: 420,
         desc: 'Applying idiomatic Go patterns to coordinate massive pools of background workers.',
         concepts: ['Fan-In and Fan-Out thread multiplexing', 'Select statements with timeout channel cancel contexts'],
@@ -239,8 +239,8 @@ const NODES = [
         type: 'programming',
         parent: 'go',
         shape: 'tape_label',
-        x: -100,
-        y: 460,
+        x: -75,
+        y: 486,
         desc: 'Fine-tuning Go HTTP servers to handle millions of requests with low memory allocations.',
         concepts: ['HTTP socket pools configuration', 'Fast JSON encoders and buffer pooling logic'],
         papers: [
@@ -255,8 +255,8 @@ const NODES = [
         type: 'programming',
         parent: 'cpp',
         shape: 'tape_label',
-        x: -500,
-        y: -100,
+        x: -550,
+        y: -93,
         desc: 'Optimizing object allocations for CPU L1/L2 cache locality, using custom compilers flags.',
         concepts: ['Avoid cache misses with structure-of-arrays alignments', 'Zero-allocation memory arenas'],
         papers: [
@@ -299,8 +299,8 @@ const NODES = [
         type: 'programming',
         parent: 'rust',
         shape: 'tape_label',
-        x: 0,
-        y: 450,
+        x: -22,
+        y: 424,
         desc: 'Achieving C-level memory speed without garbage collectors using Rust ownership.',
         concepts: ['Lifetimes variables compiler enforcement', 'Safe multi-threaded sharing bounds (Sync/Send traits)'],
         papers: [
@@ -313,8 +313,8 @@ const NODES = [
         type: 'programming',
         parent: 'rust',
         shape: 'tape_label',
-        x: 100,
-        y: 430,
+        x: 120,
+        y: 583,
         desc: 'Compiling core calculation modules into sandboxed WebAssembly execution packages for edge CDN routers.',
         concepts: ['Wasmtime isolated execution sandbox config', 'V8 bindings runtime integrations'],
         papers: [
@@ -327,8 +327,8 @@ const NODES = [
         type: 'programming',
         parent: 'rust',
         shape: 'tape_label',
-        x: 200,
-        y: 410,
+        x: 175,
+        y: 461,
         desc: 'Integrating safe Rust libraries into scripting codebases using native shared objects.',
         concepts: ['Maturin build systems compilation', 'Rust-based tokenizers execution in Python projects'],
         papers: [
@@ -343,8 +343,8 @@ const NODES = [
         type: 'architecture',
         parent: 'arch',
         shape: 'note_card',
-        x: -200,
-        y: -240,
+        x: -183,
+        y: -230,
         desc: 'Resilient node topologies executing across dynamic global networks.',
         concepts: [
             'Distributed consensus protocols',
@@ -355,8 +355,8 @@ const NODES = [
             { title: 'In Search of an Understandable Consensus Algorithm (Raft)', authors: 'D. Ongaro, J. Ousterhout (2014)', url: 'https://raft.github.io/raft.pdf' },
             { title: 'Paxos Made Simple', authors: 'Leslie Lamport (2001)', url: 'https://lamport.azurewebsites.net/pubs/paxos-simple.pdf' },
             { title: 'Dynamo: Amazon\'s Highly Available Key-value Store', authors: 'G. DeCandia et al. (2007)', url: 'https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf' },
-            { title: 'Spanner: Google\'s Globally-Distributed Database', authors: 'J. Corbett et al. (2012)', url: 'https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/39729.pdf' },
-            { title: 'Kafka: a Distributed Messaging System for Log Processing', authors: 'J. Kreps et al. (2011)', url: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2011/06/kafka_sosp2011.pdf' },
+            { title: 'Spanner: Google\'s Globally-Distributed Database', authors: 'J. Corbett et al. (2012)', url: 'https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf' },
+            { title: 'Kafka: a Distributed Messaging System for Log Processing', authors: 'J. Kreps et al. (2011)', url: 'https://notes.stephenholiday.com/Kafka.pdf' },
             { title: 'MIT 6.824: Distributed Systems Course Syllabus & Notes', authors: 'Robert Morris (MIT CSAIL Website)', url: 'https://pdos.csail.mit.edu/6.824/' }
         ]
     },
@@ -366,8 +366,8 @@ const NODES = [
         type: 'architecture',
         parent: 'arch',
         shape: 'note_card',
-        x: 200,
-        y: -240,
+        x: 197,
+        y: -250,
         desc: 'Strategies for caching, load balancing, and orchestration.',
         concepts: [
             'In-memory data structures caches',
@@ -385,7 +385,7 @@ const NODES = [
         parent: 'arch',
         shape: 'note_card',
         x: -90,
-        y: -340,
+        y: -335,
         desc: 'Comparing SQL, NoSQL, and NewSQL architectures for ACID compliance at scale.',
         concepts: [
             'Sharding keys and consistent hashing rings',
@@ -402,8 +402,8 @@ const NODES = [
         type: 'architecture',
         parent: 'arch',
         shape: 'note_card',
-        x: 90,
-        y: -340,
+        x: 91,
+        y: -350,
         desc: 'Distributed tracing, telemetry monitoring, metrics logs, and chaos engineering.',
         concepts: [
             'Distributed spans tracing context headers propagation',
@@ -411,7 +411,7 @@ const NODES = [
             'Chaos monkey fault injection simulations'
         ],
         papers: [
-            { title: 'Observability is not about Logs, Metrics, and Traces', authors: 'Charity Majors (Honeycomb Technical Essay)', url: 'https://charity.wtf/2020/03/03/observability-is-not-about-logs-metrics-and-traces/' }
+            { title: 'Observability is not about Logs, Metrics, and Traces', authors: 'Charity Majors (Honeycomb Technical Essay)', url: 'https://www.honeycomb.io/blog/they-arent-pillars-theyre-lenses' }
         ]
     },
     {
@@ -420,8 +420,8 @@ const NODES = [
         type: 'architecture',
         parent: 'arch',
         shape: 'note_card',
-        x: -260,
-        y: -120,
+        x: -249,
+        y: -130,
         desc: 'Investigating object-oriented analysis, design patterns, schema generation, code decoupling, and interface segregation.',
         concepts: [
             'SOLID design principles application',
@@ -438,8 +438,8 @@ const NODES = [
         type: 'architecture',
         parent: 'arch',
         shape: 'note_card',
-        x: 260,
-        y: -120,
+        x: 207,
+        y: -87,
         desc: 'Analyzing large-scale system topology, database federation, caching hierarchies, CDN distribution, and global networking.',
         concepts: [
             'Monolithic vs Microservice decomposition',
@@ -458,8 +458,8 @@ const NODES = [
         type: 'architecture',
         parent: 'dist',
         shape: 'tape_label',
-        x: -340,
-        y: -260,
+        x: -353,
+        y: -249,
         desc: 'Ensuring consistent state decisions across clusters of nodes despite hardware and network dropouts.',
         concepts: ['Leader election state timeouts', 'Write log replication commits and rollbacks'],
         papers: [
@@ -474,13 +474,13 @@ const NODES = [
         type: 'architecture',
         parent: 'dist',
         shape: 'tape_label',
-        x: -310,
-        y: -320,
+        x: -323,
+        y: -311,
         desc: 'Scaling write bounds with partitioning rings, replica distribution, and vector clocks resolving conflicts.',
         concepts: ['Consistent hashing coordinate rings', 'Read-replica sync lag resolving rules'],
         papers: [
             { title: 'Dynamo: Amazon\'s Highly Available Key-value Store', authors: 'G. DeCandia et al. (2007)', url: 'https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf' },
-            { title: 'Spanner: Google\'s Globally-Distributed Database', authors: 'J. Corbett et al. (2012)', url: 'https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/39729.pdf' }
+            { title: 'Spanner: Google\'s Globally-Distributed Database', authors: 'J. Corbett et al. (2012)', url: 'https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf' }
         ]
     },
     {
@@ -489,12 +489,12 @@ const NODES = [
         type: 'architecture',
         parent: 'dist',
         shape: 'tape_label',
-        x: -260,
-        y: -380,
+        x: -259,
+        y: -372,
         desc: 'Routing event logs at scale through high-throughput, sequential disk write structures.',
         concepts: ['Sequential disk append-only write loops', 'Consumer group partition balance controls'],
         papers: [
-            { title: 'Kafka: a Distributed Messaging System for Log Processing', authors: 'J. Kreps, N. Narkhede, A. Rao (2011)', url: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2011/06/kafka_sosp2011.pdf' },
+            { title: 'Kafka: a Distributed Messaging System for Log Processing', authors: 'J. Kreps, N. Narkhede, A. Rao (2011)', url: 'https://notes.stephenholiday.com/Kafka.pdf' },
             { title: 'Apache Kafka Official Documentation', authors: 'Apache Software Foundation (Official Docs)', url: 'https://kafka.apache.org/documentation/' }
         ]
     },
@@ -506,8 +506,8 @@ const NODES = [
         type: 'architecture',
         parent: 'db',
         shape: 'tape_label',
-        x: -160,
-        y: -420,
+        x: -173,
+        y: -433,
         desc: 'Horizontal partition sharding of relational tables across separate SQL nodes using hashing functions.',
         concepts: ['Range-based vs Hash-based sharding maps', 'Managing multi-node join constraints'],
         papers: [
@@ -520,8 +520,8 @@ const NODES = [
         type: 'architecture',
         parent: 'db',
         shape: 'tape_label',
-        x: -110,
-        y: -460,
+        x: -119,
+        y: -495,
         desc: 'Tradeoffs of key-value, document, graph, and wide-column structures (Cassandra/MongoDB/DynamoDB).',
         concepts: ['CAP theorem partition boundaries', 'LSM tree engines vs B-Tree write speeds'],
         papers: [
@@ -534,12 +534,12 @@ const NODES = [
         type: 'architecture',
         parent: 'db',
         shape: 'tape_label',
-        x: -40,
-        y: -430,
+        x: -27,
+        y: -432,
         desc: 'Relational ACID databases that scale horizontally globally using GPS clocks and consensus logs.',
         concepts: ['TrueTime API GPS clock synchronization bounds', 'Two-phase commit overlays Paxos clusters'],
         papers: [
-            { title: 'Spanner: Google\'s Globally-Distributed Database Whitepaper', authors: 'James Corbett et al. (Google Research Paper)', url: 'https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/39729.pdf' }
+            { title: 'Spanner: Google\'s Globally-Distributed Database Whitepaper', authors: 'James Corbett et al. (Google Research Paper)', url: 'https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf' }
         ]
     },
     {
@@ -548,12 +548,12 @@ const NODES = [
         type: 'architecture',
         parent: 'db',
         shape: 'tape_label',
-        x: -100,
-        y: -500,
+        x: -99,
+        y: -557,
         desc: 'Analyzing database transaction guarantees: Atomicity, Consistency, Isolation, and Durability.',
         concepts: ['Two-phase locking and MVCC concurrency', 'Write-ahead logging (WAL) for durability guarantees'],
         papers: [
-            { title: 'Granularity of Locks and System R Transaction Isolation', authors: 'Jim Gray et al. (1975)', url: 'https://www.cs.berkeley.edu/~brewer/cs262b/SystemR.pdf' },
+            { title: 'Granularity of Locks and System R Transaction Isolation', authors: 'Jim Gray et al. (1975)', url: 'https://people.eecs.berkeley.edu/~brewer/cs262/SystemR.pdf' },
             { title: 'Database Transaction ACID Guarantees', authors: 'Wikipedia Contributors (Technical Wiki Reference)', url: 'https://en.wikipedia.org/wiki/ACID' }
         ]
     },
@@ -565,8 +565,8 @@ const NODES = [
         type: 'architecture',
         parent: 'obs',
         shape: 'tape_label',
-        x: 40,
-        y: -430,
+        x: 34,
+        y: -494,
         desc: 'Integrating a vendor-agnostic specification to collect and export metrics, logs, and trace spans.',
         concepts: ['Distributed context propagation', 'Collector architecture pipelines config'],
         papers: [
@@ -579,8 +579,8 @@ const NODES = [
         type: 'architecture',
         parent: 'obs',
         shape: 'tape_label',
-        x: 110,
-        y: -460,
+        x: 108,
+        y: -658,
         desc: 'Deploying pull-based systems to scrape metrics and evaluate system status alerts.',
         concepts: ['PromQL multidimensional queries', 'Alertmanager trigger hooks'],
         papers: [
@@ -593,8 +593,8 @@ const NODES = [
         type: 'architecture',
         parent: 'obs',
         shape: 'tape_label',
-        x: 160,
-        y: -420,
+        x: 173,
+        y: -597,
         desc: 'Injecting controlled faults (network lag, pod deaths) to proactively find architecture gaps.',
         concepts: ['Hypothesizing steady-state boundaries', 'Automating blast radius controls'],
         papers: [
@@ -609,8 +609,8 @@ const NODES = [
         type: 'architecture',
         parent: 'scale',
         shape: 'tape_label',
-        x: 260,
-        y: -380,
+        x: 258,
+        y: -536,
         desc: 'Deploying in-memory data grids to shield database layers from heavy query volumes.',
         concepts: ['Eviction algorithms (LRU, LFU, TTL indices)', 'Cache stampede mitigation using mutex locks'],
         papers: [
@@ -623,8 +623,8 @@ const NODES = [
         type: 'architecture',
         parent: 'scale',
         shape: 'tape_label',
-        x: 310,
-        y: -320,
+        x: 309,
+        y: -474,
         desc: 'Distributing incoming traffic and caching pages close to local users.',
         concepts: ['Layer 4 vs Layer 7 TCP routing calculations', 'Anycast routing protocols configuration'],
         papers: [
@@ -637,8 +637,8 @@ const NODES = [
         type: 'architecture',
         parent: 'scale',
         shape: 'tape_label',
-        x: 340,
-        y: -260,
+        x: 350,
+        y: -413,
         desc: 'Consolidating incoming api calls, managing rate-limits, and token evaluations at the entry gate.',
         concepts: ['Token Bucket and Leaky Bucket rate limiting', 'gRPC-Web to JSON protocol translation layers'],
         papers: [
@@ -651,8 +651,8 @@ const NODES = [
         type: 'architecture',
         parent: 'arch_lld',
         shape: 'tape_label',
-        x: -380,
-        y: -150,
+        x: -406,
+        y: -171,
         desc: 'Designing decoupled software components using single responsibility, open-closed, and dependency inversion principles.',
         concepts: ['Dependency injection frameworks', 'Interface contracts and interface segregation rules'],
         papers: [
@@ -665,12 +665,12 @@ const NODES = [
         type: 'architecture',
         parent: 'arch_lld',
         shape: 'tape_label',
-        x: -380,
-        y: -100,
+        x: -405,
+        y: -107,
         desc: 'Applying Gang of Four patterns (Singleton, Factory, Strategy, Observer) to solve recurring coding structure challenges.',
         concepts: ['Creational vs structural vs behavioral patterns', 'Composition over inheritance paradigms'],
         papers: [
-            { title: 'Design Patterns in Object-Oriented Programming', authors: 'Christopher Okhravi (YouTube Course)', url: 'https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ybYBJKgPKg24L' }
+            { title: 'Design Patterns in Object-Oriented Programming', authors: 'Christopher Okhravi (YouTube Course)', url: 'https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc' }
         ]
     },
     {
@@ -679,12 +679,12 @@ const NODES = [
         type: 'architecture',
         parent: 'arch_lld',
         shape: 'tape_label',
-        x: -200,
-        y: -60,
+        x: -167,
+        y: -48,
         desc: 'Creating cohesive, type-safe API schemas and database models using industry standard rules.',
         concepts: ['RESTful interface standards and gRPC protocol buffers', 'SQL schema normalizations and indexing models'],
         papers: [
-            { title: 'API Design Patterns & Principles', authors: 'Google Cloud Tech / JJ Geewax (YouTube)', url: 'https://www.youtube.com/watch?v=P0a7pE-K1F8' }
+            { title: 'API Design Patterns & Principles', authors: 'Google Cloud Tech / JJ Geewax (YouTube)', url: 'https://www.youtube.com/watch?v=bKqaoA_CYXg' }
         ]
     },
     {
@@ -693,8 +693,8 @@ const NODES = [
         type: 'architecture',
         parent: 'arch_hld',
         shape: 'tape_label',
-        x: 200,
-        y: -60,
+        x: 197,
+        y: -6,
         desc: 'Decomposing applications into specialized, independently deployable services with service discovery and mesh layers.',
         concepts: ['Service discovery and routing registries', 'Saga pattern managing multi-service database writes'],
         papers: [
@@ -707,8 +707,8 @@ const NODES = [
         type: 'architecture',
         parent: 'arch_hld',
         shape: 'tape_label',
-        x: 380,
-        y: -100,
+        x: 394,
+        y: -68,
         desc: 'Structuring asynchronous inter-service workflows using message publishers, subscribers, and transaction logs.',
         concepts: ['Outbox patterns for database transactions', 'Idempotent event consumers handling network repeats'],
         papers: [
@@ -721,8 +721,8 @@ const NODES = [
         type: 'architecture',
         parent: 'arch_hld',
         shape: 'tape_label',
-        x: 380,
-        y: -150,
+        x: 367,
+        y: -192,
         desc: 'Designing fault-tolerant systems with geo-replication, automated health check failures, and data recovery steps.',
         concepts: ['Active-Active vs Active-Passive multi-region config', 'RTO (Recovery Time Objective) and RPO targets estimation'],
         papers: [
@@ -735,8 +735,8 @@ const NODES = [
         type: 'architecture',
         parent: 'arch_hld',
         shape: 'tape_label',
-        x: 240,
-        y: -180,
+        x: 222,
+        y: -168,
         desc: 'A comprehensive roadmap for designing scalable systems from scratch, centering on architecture methodologies.',
         concepts: ['Back-of-the-envelope calculations', 'Load balancing and multi-tier network topologies'],
         papers: [
@@ -751,8 +751,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai',
         shape: 'note_card',
-        x: 240,
-        y: 280,
+        x: 239,
+        y: 263,
         desc: 'Seminal research papers forming the mathematical and algorithmic foundations of neural network training and optimization.',
         concepts: [
             'Backpropagation chain rule formulations',
@@ -770,8 +770,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai',
         shape: 'note_card',
-        x: 380,
-        y: -20,
+        x: 373,
+        y: 17,
         desc: 'Seminal papers introducing the self-attention mechanism, transformer encoders, and scaled generative models.',
         concepts: [
             'Query-Key-Value self-attention computation',
@@ -789,8 +789,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai',
         shape: 'note_card',
-        x: 420,
-        y: 180,
+        x: 404,
+        y: 197,
         desc: 'Seminal architectures linking parametric neural weights with non-parametric external vector search databases.',
         concepts: [
             'Hierarchical navigable small world graphs (HNSW)',
@@ -799,7 +799,7 @@ const NODES = [
             'Latent retriever pre-training methods'
         ],
         papers: [
-            { title: 'Retrieval-Augmented Generation (RAG) Tutorial', authors: 'LangChain Documentation (Official Guide)', url: 'https://python.langchain.com/docs/tutorials/rag/' }
+            { title: 'Retrieval-Augmented Generation (RAG) Tutorial', authors: 'LangChain Documentation (Official Guide)', url: 'https://docs.langchain.com/oss/python/langchain/rag' }
         ]
     },
     {
@@ -808,8 +808,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai',
         shape: 'note_card',
-        x: 480,
-        y: -140,
+        x: 523,
+        y: -211,
         desc: 'Seminal papers developing reinforcement learning algorithms, preference alignment, and tool-use agent loops.',
         concepts: [
             'Deep Q-learning visual feature extraction',
@@ -830,8 +830,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_foundations',
         shape: 'tape_label',
-        x: 300,
-        y: 390,
+        x: 320,
+        y: 522,
         desc: 'Seminal paper introducing the backpropagation algorithm using the chain rule of calculus to train multi-layer feedforward networks.',
         concepts: ['Chain rule partial derivatives propagation', 'Gradient-based weight adjustment minimization'],
         papers: [
@@ -844,12 +844,12 @@ const NODES = [
         type: 'ai',
         parent: 'ai_foundations',
         shape: 'tape_label',
-        x: 180,
-        y: 440,
+        x: 142,
+        y: 522,
         desc: 'Introduced the Long Short-Term Memory cell structure utilizing gating mechanisms to prevent vanishing gradients in sequential loops.',
         concepts: ['Constant error carousels (CEC) gate dynamics', 'Cell state persistence across time-steps'],
         papers: [
-            { title: 'Long Short-Term Memory', authors: 'S. Hochreiter, J. Schmidhuber (1997)', url: 'https://arxiv.org/pdf/cs/9706301.pdf' }
+            { title: 'Long Short-Term Memory', authors: 'S. Hochreiter, J. Schmidhuber (1997)', url: 'https://deeplearning.cs.cmu.edu/S23/document/readings/LSTM.pdf' }
         ]
     },
     {
@@ -858,8 +858,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_foundations',
         shape: 'tape_label',
-        x: 290,
-        y: 460,
+        x: 287,
+        y: 583,
         desc: 'Seminal paper introducing convolutional layers, weight sharing, subsampling, and spatial filters for character recognition.',
         concepts: ['Spatial weight sharing & translation invariance', 'Feature maps stacking & average pooling layers'],
         papers: [
@@ -872,8 +872,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_foundations',
         shape: 'tape_label',
-        x: 400,
-        y: 450,
+        x: 436,
+        y: 583,
         desc: 'The landmark deep CNN architecture utilizing GPU training, ReLU activations, and dropout regularization, initiating deep learning.',
         concepts: ['ReLU non-linear activations bypassing saturation', 'Dual-GPU model parallel training architectures'],
         papers: [
@@ -886,8 +886,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_foundations',
         shape: 'tape_label',
-        x: 390,
-        y: 380,
+        x: 402,
+        y: 461,
         desc: 'Introduced the Adam optimizer, adapting learning rates based on first and second moments of gradients.',
         concepts: ['Exponential decay moving averages computation', 'Bias correction formulas for initial time-steps'],
         papers: [
@@ -900,8 +900,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_foundations',
         shape: 'tape_label',
-        x: 410,
-        y: 300,
+        x: 408,
+        y: 339,
         desc: 'Introduced residual learning frameworks using identity shortcut connections to enable training of extremely deep networks.',
         concepts: ['Identity mapping shortcuts bypassing layers', 'Reformulated residual optimization targets mapping'],
         papers: [
@@ -914,8 +914,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_foundations',
         shape: 'tape_label',
-        x: 300,
-        y: 310,
+        x: 284,
+        y: 400,
         desc: 'Established high-quality generative modeling using Markov chains with denoising score matching to construct data distributions.',
         concepts: ['Forward noise scheduling and backward denoising loops', 'Variational bound optimization on joint likelihoods'],
         papers: [
@@ -930,8 +930,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_transformers',
         shape: 'tape_label',
-        x: 530,
-        y: 80,
+        x: 532,
+        y: 54,
         desc: 'Seminal Attention Is All You Need paper replacing recurrent/convolutional layers with QKV self-attention projections.',
         concepts: ['Scaled dot-product attention formula evaluation', 'Multi-head attention parallel representations matching'],
         papers: [
@@ -944,8 +944,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_transformers',
         shape: 'tape_label',
-        x: 520,
-        y: 0,
+        x: 528,
+        y: -7,
         desc: 'Introduced deep bidirectional representations via Masked Language Modeling, setting records in language understanding.',
         concepts: ['Masked Language Model (MLM) pre-training targets', 'Next Sentence Prediction (NSP) classifications'],
         papers: [
@@ -958,8 +958,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_transformers',
         shape: 'tape_label',
-        x: 510,
-        y: -80,
+        x: 539,
+        y: -129,
         desc: 'Showed that scaling auto-regressive language models allows in-context few-shot learning without parameter updates.',
         concepts: ['In-context meta-learning via task prompts', 'Autoregressive generation at 175-billion parameters scale'],
         papers: [
@@ -972,8 +972,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_transformers',
         shape: 'tape_label',
-        x: 390,
-        y: -90,
+        x: 384,
+        y: -129,
         desc: 'Proved that open-source LLMs trained on larger token distributions can match proprietary models at smaller parameters scales.',
         concepts: ['RoPE (Rotary Position Embedding) coordinate scaling', 'SwiGLU activation functions and RMSNorm normalization'],
         papers: [
@@ -988,8 +988,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_retrieval',
         shape: 'tape_label',
-        x: 560,
-        y: 260,
+        x: 595,
+        y: 247,
         desc: 'Introduced Hierarchical Navigable Small World (HNSW) graphs, setting baseline speeds for approximate nearest neighbors search.',
         concepts: ['Multi-layer graph traversal searching structures', 'Logarithmic scaling of nearest neighbor search speeds'],
         papers: [
@@ -1016,8 +1016,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_retrieval',
         shape: 'tape_label',
-        x: 540,
-        y: 100,
+        x: 560,
+        y: 115,
         desc: 'Showed that dense passage retrieval using dual-encoder architectures outperforms classical TF-IDF or BM25 lexical matches.',
         concepts: ['Dual-encoder bi-encoder architectures training', 'In-batch negative sampling loss optimization'],
         papers: [
@@ -1030,8 +1030,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_retrieval',
         shape: 'tape_label',
-        x: 460,
-        y: 250,
+        x: 450,
+        y: 278,
         desc: 'Introduced pre-training language representation models with a latent retriever to query knowledge corpuses before prediction.',
         concepts: ["Latent retriever joint training algorithms", "MIPS (Maximum Inner Product Search) dynamic index updates"],
         papers: [
@@ -1046,8 +1046,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_agents',
         shape: 'tape_label',
-        x: 620,
-        y: -60,
+        x: 634,
+        y: -68,
         desc: 'Landmark paper training deep neural networks directly from high-dimensional visual inputs to master Atari video games via RL.',
         concepts: ['Experience replay memory buffers decoupling', 'Target Q-network weight synchronization schedules'],
         papers: [
@@ -1060,8 +1060,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_agents',
         shape: 'tape_label',
-        x: 620,
-        y: -140,
+        x: 678,
+        y: -191,
         desc: 'Mastered the game of Go using value and policy networks combined with Monte Carlo Tree Search, defeating world champions.',
         concepts: ["Monte Carlo Tree Search (MCTS) path evaluations", "Supervised pre-training plus self-play reinforcement learning"],
         papers: [
@@ -1074,8 +1074,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_agents',
         shape: 'tape_label',
-        x: 560,
-        y: -220,
+        x: 582,
+        y: -292,
         desc: 'Introduced Proximal Policy Optimization, clipping probability ratios to achieve stable gradient steps in reinforcement learning.',
         concepts: ['Clipped surrogate objective functions scaling', 'Policy divergence penalties via KL variance constraints'],
         papers: [
@@ -1088,8 +1088,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_agents',
         shape: 'tape_label',
-        x: 640,
-        y: -280,
+        x: 643,
+        y: -353,
         desc: 'InstructGPT paper using Reinforcement Learning from Human Feedback (RLHF) to align language model completions with human intent.',
         concepts: ['Reward model scaling based on pairwise comparisons', 'PPO fine-tuning loops evaluating completion scoring'],
         papers: [
@@ -1102,8 +1102,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_agents',
         shape: 'tape_label',
-        x: 480,
-        y: -280,
+        x: 498,
+        y: -414,
         desc: 'Introduced Direct Preference Optimization, bypasses reward modeling or RLHF loops to align models using a direct closed-form objective.',
         concepts: ["Closed-form optimization targeting log-likelihood ratios", "Eliminating policy sampling and actor-critic networks training"],
         papers: [
@@ -1116,8 +1116,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_agents',
         shape: 'tape_label',
-        x: 440,
-        y: -220,
+        x: 437,
+        y: -352,
         desc: 'Developed the ReAct framework, enabling LLMs to generate reasoning traces and task-specific actions in an interleaved manner.',
         concepts: ['Interleaved reasoning thoughts and action inputs', 'External API/tool integration execution logic'],
         papers: [
@@ -1130,8 +1130,8 @@ const NODES = [
         type: 'ai',
         parent: 'ai_agents',
         shape: 'tape_label',
-        x: 380,
-        y: -200,
+        x: 367,
+        y: -291,
         desc: 'Created computational agents that simulate human behavior, complete with reflection architectures and dynamic associative memories.',
         concepts: ['Reflection and memory retrieval score graphs', 'Dynamic planning and execution associative engines'],
         papers: [

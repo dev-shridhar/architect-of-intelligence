@@ -7,7 +7,7 @@ import argparse
 PAPERS = [
     # Category 1: Neural Networks & Optimization Foundations (1-25)
     {"category": "neural_nets", "title": "Learning Representations by Back-Propagating Errors", "filename": "backprop_1986.pdf", "url": "https://www.nature.com/articles/323533a0.pdf"},
-    {"category": "neural_nets", "title": "Long Short-Term Memory", "filename": "lstm_1997.pdf", "url": "https://arxiv.org/pdf/cs/9706301.pdf"},
+    {"category": "neural_nets", "title": "Long Short-Term Memory", "filename": "lstm_1997.pdf", "url": "https://deeplearning.cs.cmu.edu/S23/document/readings/LSTM.pdf"},
     {"category": "neural_nets", "title": "Gradient-Based Learning Applied to Document Recognition", "filename": "lenet_1998.pdf", "url": "http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf"},
     {"category": "neural_nets", "title": "Random Forests", "filename": "random_forests_2001.pdf", "url": "https://link.springer.com/content/pdf/10.1023/A:1010933404324.pdf"},
     {"category": "neural_nets", "title": "ImageNet Classification with Deep Convolutional Neural Networks (AlexNet)", "filename": "alexnet_2012.pdf", "url": "https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf"},

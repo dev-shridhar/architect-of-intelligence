@@ -489,6 +489,7 @@ function selectNode(node) {
             a.className = "paper-item";
             a.href = p.url;
             a.target = "_blank";
+            a.rel = "noopener noreferrer";
             
             const titleDiv = document.createElement('div');
             titleDiv.className = "paper-title";

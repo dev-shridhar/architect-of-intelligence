@@ -21,7 +21,7 @@ This catalog lists 100 of the most seminal, cited, and influential research pape
 2.  **"Long Short-Term Memory" (1997)**
     *   *Authors*: Sepp Hochreiter, Jürgen Schmidhuber
     *   *Contribution*: Introduced the LSTM network architecture to solve vanishing/exploding gradients in RNNs.
-    *   *URL*: [arXiv:cs/9706301](https://arxiv.org/pdf/cs/9706301.pdf)
+    *   *URL*: [CMU: Deep Learning](https://deeplearning.cs.cmu.edu/S23/document/readings/LSTM.pdf)
 3.  **"Gradient-Based Learning Applied to Document Recognition" (1998)**
     *   *Authors*: Yann LeCun, Léon Bottou, Yoshua Bengio, Patrick Haffner
     *   *Contribution*: Introduced LeNet-5, establishing convolutional neural networks (CNNs) for image recognition.
