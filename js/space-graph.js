@@ -138,6 +138,19 @@ function drawPushpin(c, x, y, color = '#c0392b') {
     c.restore();
 }
 
+// Draw text scaled down to fit perfectly inside the designated maximum width bounds
+function drawFittedText(c, text, maxWidth, defaultSize, fontFamily, bold = false) {
+    c.save();
+    let size = defaultSize;
+    c.font = (bold ? 'bold ' : '') + size + 'px ' + fontFamily;
+    while (c.measureText(text).width > maxWidth && size > 6) {
+        size -= 0.5;
+        c.font = (bold ? 'bold ' : '') + size + 'px ' + fontFamily;
+    }
+    c.fillText(text, 0, 0);
+    c.restore();
+}
+
 // Master Draw Loop
 function draw() {
     // Clear canvas to reveal CSS background wall
@@ -241,13 +254,24 @@ function draw() {
             ctx.ellipse(0, 15, 25, 12, 0, 0, Math.PI * 2);
             ctx.fill();
             
-            // Polaroid bottom white frame text
+            // Polaroid bottom white frame text (Bold and Fitted)
             ctx.shadowColor = 'transparent';
-            ctx.fillStyle = '#2c2c2e';
-            ctx.font = 'bold 11px "Courier Prime", monospace';
+            ctx.fillStyle = '#000000';
             ctx.textAlign = 'center';
-            ctx.fillText(node.text.split('\n')[0], 0, h/2 - 20);
-            ctx.fillText(node.text.split('\n')[1] || '', 0, h/2 - 8);
+            ctx.textBaseline = 'middle';
+            
+            const lines = node.text.split('\n');
+            ctx.save();
+            ctx.translate(0, h/2 - 22);
+            drawFittedText(ctx, lines[0], w - 12, 11, '"Courier Prime", monospace', true);
+            ctx.restore();
+            
+            if (lines[1]) {
+                ctx.save();
+                ctx.translate(0, h/2 - 10);
+                drawFittedText(ctx, lines[1], w - 12, 11, '"Courier Prime", monospace', true);
+                ctx.restore();
+            }
             
         } else if (node.shape === 'newspaper_clipping') {
             const w = 160;
@@ -275,12 +299,11 @@ function draw() {
             ctx.lineTo(w/2 - 6, h/2 - 4);
             ctx.stroke();
             
-            // Print text
+            // Print text (Bold and Fitted)
             ctx.fillStyle = varColorText(theme.badge);
-            ctx.font = 'bold 14px "Playfair Display", serif';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
-            ctx.fillText(node.text, 0, 0);
+            drawFittedText(ctx, node.text, w - 16, 13, '"Playfair Display", serif', true);
             
         } else if (node.shape === 'note_card') {
             const w = 130;
@@ -313,18 +336,28 @@ function draw() {
             ctx.lineTo(-w/2 + 15, h/2);
             ctx.stroke();
             
-            // Tape node text
-            ctx.fillStyle = '#2c2c2e';
-            ctx.font = 'bold 11px "Courier Prime", monospace';
+            // Note card text (Bold, Fitted, and Split to prevent overflow)
+            ctx.fillStyle = '#000000';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
             
             const words = node.text.split(' ');
             if (words.length > 1) {
-                ctx.fillText(words.slice(0, Math.ceil(words.length/2)).join(' '), 0, -6);
-                ctx.fillText(words.slice(Math.ceil(words.length/2)).join(' '), 0, 8);
+                const mid = Math.ceil(words.length / 2);
+                const line1 = words.slice(0, mid).join(' ');
+                const line2 = words.slice(mid).join(' ');
+                
+                ctx.save();
+                ctx.translate(0, -7);
+                drawFittedText(ctx, line1, w - 20, 11, '"Courier Prime", monospace', true);
+                ctx.restore();
+                
+                ctx.save();
+                ctx.translate(0, 7);
+                drawFittedText(ctx, line2, w - 20, 11, '"Courier Prime", monospace', true);
+                ctx.restore();
             } else {
-                ctx.fillText(node.text, 0, 0);
+                drawFittedText(ctx, node.text, w - 20, 11, '"Courier Prime", monospace', true);
             }
             
         } else if (node.shape === 'tape_label') {
@@ -341,14 +374,13 @@ function draw() {
             ctx.fill();
             ctx.stroke();
             
-            // Masking tape details
+            // Masking tape details (Bold, Fitted, and High Contrast Solid Black)
             ctx.shadowBlur = 0;
             ctx.shadowColor = 'transparent';
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.6)';
-            ctx.font = '9px "Special Elite", monospace';
+            ctx.fillStyle = '#000000';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
-            ctx.fillText(node.text, 0, 0);
+            drawFittedText(ctx, node.text, 98, 10, '"Special Elite", monospace', true);
         }
         
         ctx.restore(); // Undo local rotation translates

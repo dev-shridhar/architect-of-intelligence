@@ -26,7 +26,7 @@ const NODES = [
             'Advanced Model orchestrations & inference bindings'
         ],
         papers: [
-            { title: 'System Design for AI Engineers and Architects', authors: 'Hussein Nasser / TechWorld (YouTube)', url: 'https://www.youtube.com/watch?v=R873BlNVUB4' }
+            { title: 'Designing Data-Intensive Applications', authors: 'Martin Kleppmann (O\'Reilly Book)', url: 'https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/' }
         ]
     },
 
@@ -244,7 +244,7 @@ const NODES = [
         desc: 'Fine-tuning Go HTTP servers to handle millions of requests with low memory allocations.',
         concepts: ['HTTP socket pools configuration', 'Fast JSON encoders and buffer pooling logic'],
         papers: [
-            { title: 'Building a High-Throughput HTTP API in Go', authors: 'G. O. Blog (Article)', url: 'https://golang.org/doc/articles/wiki/' }
+            { title: 'Go Performance Book & Optimization Guide', authors: 'Damian Gryski (GitHub Guide)', url: 'https://github.com/dgryski/go-perfbook' }
         ]
     },
 
@@ -288,7 +288,7 @@ const NODES = [
         desc: 'Compiling large model architectures to execute with low latency on desktop platforms.',
         concepts: ['Quantization models (INT4, FP8 calculations)', 'GGML model loading, TensorRT engines compilation'],
         papers: [
-            { title: 'Llama.cpp Deep Dive & Local Run Guide', authors: 'A. K. (YouTube Guide)', url: 'https://www.youtube.com/watch?v=kCc8FmEb1nY' }
+            { title: 'Llama.cpp - Port of LLaMA model in C/C++', authors: 'Georgi Gerganov (Official GitHub)', url: 'https://github.com/ggerganov/llama.cpp' }
         ]
     },
 
@@ -411,7 +411,7 @@ const NODES = [
             'Chaos monkey fault injection simulations'
         ],
         papers: [
-            { title: 'Observability in Modern Distributed Systems', authors: 'Charity Majors / Honeycomb (YouTube Lecture)', url: 'https://www.youtube.com/watch?v=F0L1WbS19K4' }
+            { title: 'Observability is not about Logs, Metrics, and Traces', authors: 'Charity Majors (Honeycomb Technical Essay)', url: 'https://charity.wtf/2020/03/03/observability-is-not-about-logs-metrics-and-traces/' }
         ]
     },
     {
@@ -539,7 +539,7 @@ const NODES = [
         desc: 'Relational ACID databases that scale horizontally globally using GPS clocks and consensus logs.',
         concepts: ['TrueTime API GPS clock synchronization bounds', 'Two-phase commit overlays Paxos clusters'],
         papers: [
-            { title: 'Spanner architecture deep dive', authors: 'Google Cloud Tech (YouTube)', url: 'https://www.youtube.com/watch?v=F0L1WbS19K4' }
+            { title: 'Spanner: Google\'s Globally-Distributed Database Whitepaper', authors: 'James Corbett et al. (Google Research Paper)', url: 'https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/39729.pdf' }
         ]
     },
     {
@@ -799,7 +799,7 @@ const NODES = [
             'Latent retriever pre-training methods'
         ],
         papers: [
-            { title: 'Retrieval-Augmented Generation (RAG) System Design', authors: 'LangChain Tutorial (YouTube)', url: 'https://www.youtube.com/watch?v=tcqEUSNCn2s' }
+            { title: 'Retrieval-Augmented Generation (RAG) Tutorial', authors: 'LangChain Documentation (Official Guide)', url: 'https://python.langchain.com/docs/tutorials/rag/' }
         ]
     },
     {
@@ -819,7 +819,7 @@ const NODES = [
             'Interleaved reasoning-action loops (ReAct)'
         ],
         papers: [
-            { title: 'Generative Agents & Multi-Agent Runtimes', authors: 'Stanford / AutoGen (YouTube guides)', url: 'https://www.youtube.com/watch?v=tcqEUSNCn2s' }
+            { title: 'AutoGen - Multi-Agent Conversation Framework', authors: 'Microsoft Research (Official Documentation)', url: 'https://microsoft.github.io/autogen/' }
         ]
     },
 
