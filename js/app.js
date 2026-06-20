@@ -542,6 +542,21 @@ const NODES = [
             { title: 'Spanner architecture deep dive', authors: 'Google Cloud Tech (YouTube)', url: 'https://www.youtube.com/watch?v=F0L1WbS19K4' }
         ]
     },
+    {
+        id: 'db_acid',
+        text: 'ACID & Transactions',
+        type: 'architecture',
+        parent: 'db',
+        shape: 'tape_label',
+        x: -140,
+        y: -480,
+        desc: 'Analyzing database transaction guarantees: Atomicity, Consistency, Isolation, and Durability.',
+        concepts: ['Two-phase locking and MVCC concurrency', 'Write-ahead logging (WAL) for durability guarantees'],
+        papers: [
+            { title: 'Granularity of Locks and System R Transaction Isolation', authors: 'Jim Gray et al. (1975)', url: 'https://www.cs.berkeley.edu/~brewer/cs262b/SystemR.pdf' },
+            { title: 'ACID Transactions Explained', authors: 'Hussein Nasser (YouTube Video)', url: 'https://www.youtube.com/watch?v=y2yA3nUor8w' }
+        ]
+    },
 
     // Level 3: Observability Leaf Nodes
     {
@@ -714,294 +729,413 @@ const NODES = [
             { title: 'AWS High Availability & Disaster Recovery Architecture', authors: 'Amazon Web Services (YouTube Course)', url: 'https://www.youtube.com/watch?v=n7z5tW5E_kY' }
         ]
     },
+    {
+        id: 'hld_system_design',
+        text: 'System Design Roadmap',
+        type: 'architecture',
+        parent: 'arch_hld',
+        shape: 'tape_label',
+        x: 320,
+        y: -90,
+        desc: 'A comprehensive roadmap for designing scalable systems from scratch, centering on architecture methodologies.',
+        concepts: ['Back-of-the-envelope calculations', 'Load balancing and multi-tier network topologies'],
+        papers: [
+            { title: 'System Design Primer - Core High-Level Architecture Rules', authors: 'Donne Martin (Interactive GitHub Roadmap)', url: 'https://github.com/donnemartin/system-design-primer' }
+        ]
+    },
 
     // Level 2: Sub-Hubs under Artificial Intelligence
     {
-        id: 'ai_base',
-        text: 'Deep Learning Foundations',
+        id: 'ai_foundations',
+        text: 'Foundations & Optimization',
         type: 'ai',
         parent: 'ai',
         shape: 'note_card',
         x: 240,
         y: 280,
-        desc: 'Foundational calculations of neural layers and network optimization.',
+        desc: 'Seminal research papers forming the mathematical and algorithmic foundations of neural network training and optimization.',
         concepts: [
-            'Backpropagation algorithm chain rule',
-            'Gradient descent and adaptive step optimization',
-            'Activation functions and layered distributions'
+            'Backpropagation chain rule formulations',
+            'CNN spatial filtering and translation invariance',
+            'Vanishing gradient mitigation in recurrent sequences',
+            'Diffusion noise estimation models'
         ],
         papers: [
-            { title: 'Learning Representations by Back-Propagating Errors', authors: 'D. Rumelhart, G. Hinton, R. Williams (1986)', url: 'https://www.nature.com/articles/323533a0.pdf' },
-            { title: 'Adam: A Method for Stochastic Optimization', authors: 'D. Kingma, J. Ba (2014)', url: 'https://arxiv.org/pdf/1412.6980.pdf' },
-            { title: 'Decoupled Weight Decay Regularization', authors: 'I. Loshchilov, F. Hutter (2017)', url: 'https://arxiv.org/pdf/1711.05101.pdf' },
-            { title: 'Long Short-Term Memory', authors: 'S. Hochreiter, J. Schmidhuber (1997)', url: 'https://arxiv.org/pdf/cs/9706301.pdf' },
-            { title: 'Gradient-Based Learning Applied to Document Recognition', authors: 'Y. LeCun et al. (1998)', url: 'http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf' },
             { title: 'Neural Networks: Zero to Hero Course', authors: 'Andrej Karpathy (YouTube Course)', url: 'https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUb5yFo' }
         ]
     },
     {
-        id: 'ai_mod',
-        text: 'Modern Architectures',
+        id: 'ai_transformers',
+        text: 'Transformers & Attention',
         type: 'ai',
         parent: 'ai',
         shape: 'note_card',
         x: 380,
         y: -20,
-        desc: 'Transformers, self-attention, and agent orchestrations.',
+        desc: 'Seminal papers introducing the self-attention mechanism, transformer encoders, and scaled generative models.',
         concepts: [
-            'Self-attention mechanisms matrices',
-            'Vector index query models (RAG)',
-            'Multi-Agent conversational loops'
+            'Query-Key-Value self-attention computation',
+            'Bidirectional masked representation learning',
+            'In-context few-shot learning dynamics',
+            'Efficient rotary position embeddings (RoPE)'
         ],
         papers: [
-            { title: 'Attention Is All You Need', authors: 'A. Vaswani et al. (2017)', url: 'https://arxiv.org/pdf/1706.03762.pdf' },
-            { title: 'Language Models are Few-Shot Learners', authors: 'T. Brown et al. (2020)', url: 'https://arxiv.org/pdf/2005.14165.pdf' },
-            { title: 'Retrieval-Augmented Generation for Knowledge-Intensive NLP', authors: 'P. Lewis et al. (2020)', url: 'https://arxiv.org/pdf/2005.11401.pdf' }
+            { title: 'Transformers & LLM Foundations Course', authors: 'Andrej Karpathy (YouTube Guide)', url: 'https://www.youtube.com/watch?v=kCc8FmEb1nY' }
         ]
     },
     {
-        id: 'mlops',
-        text: 'AI Infra & MLOps',
+        id: 'ai_retrieval',
+        text: 'Retrieval & RAG Systems',
         type: 'ai',
         parent: 'ai',
         shape: 'note_card',
         x: 420,
         y: 180,
-        desc: 'Scaling training loops, cluster GPU coordination, and low-latency model serving pipelines.',
+        desc: 'Seminal architectures linking parametric neural weights with non-parametric external vector search databases.',
         concepts: [
-            'Distributed training models DDP vs FSDP',
-            'Model optimization engines (TensorRT, vLLM)',
-            'Vector index search grids'
+            'Hierarchical navigable small world graphs (HNSW)',
+            'Joint generator-retriever optimization loops',
+            'Dual bi-encoder dense space alignment',
+            'Latent retriever pre-training methods'
         ],
         papers: [
-            { title: 'MLOps Zoomcamp - Machine Learning Operations Course', authors: 'DataTalksClub (YouTube Playlist)', url: 'https://www.youtube.com/playlist?list=PL3MmuxUbc_hI7xK5DxKiObmRQPzX_bN2g' }
+            { title: 'Retrieval-Augmented Generation (RAG) System Design', authors: 'LangChain Tutorial (YouTube)', url: 'https://www.youtube.com/watch?v=tcqEUSNCn2s' }
         ]
     },
     {
-        id: 'llm_adv',
-        text: 'Advanced LLMs',
+        id: 'ai_agents',
+        text: 'RL, Agents & Alignment',
         type: 'ai',
         parent: 'ai',
         shape: 'note_card',
         x: 480,
         y: -140,
-        desc: 'Fine-tuning, alignment pipelines, and building cyclic multi-agent state systems.',
+        desc: 'Seminal papers developing reinforcement learning algorithms, preference alignment, and tool-use agent loops.',
         concepts: [
-            'Parameter-efficient fine-tuning (LoRA)',
+            'Deep Q-learning visual feature extraction',
+            'Monte Carlo tree search (MCTS) tree evaluations',
+            'Clipped surrogate objective updates (PPO)',
             'Preference alignment (DPO, RLHF)',
-            'Agentic loops with tools access (ReAct)'
+            'Interleaved reasoning-action loops (ReAct)'
         ],
         papers: [
-            { title: 'Advanced LLM Fine-Tuning & Prompt Engineering', authors: 'DeepLearning.AI / Andrew Ng (YouTube Guide)', url: 'https://www.youtube.com/playlist?list=PLkDaE6sC76OUc48P9hX9g7L3lshP6tJ6G' }
+            { title: 'Generative Agents & Multi-Agent Runtimes', authors: 'Stanford / AutoGen (YouTube guides)', url: 'https://www.youtube.com/watch?v=tcqEUSNCn2s' }
         ]
     },
 
-    // Level 3: Deep Learning Leaf Nodes
+    // Level 3: Neural Networks & Optimization Papers
     {
-        id: 'ai_back',
-        text: 'Backpropagation & Optimizers',
+        id: 'paper_backprop',
+        text: 'Backprop (Rumelhart 1986)',
         type: 'ai',
-        parent: 'ai_base',
+        parent: 'ai_foundations',
         shape: 'tape_label',
-        x: 270,
-        y: 400,
-        desc: 'Mathematical convergence using partial derivatives and adaptive weight optimization parameters.',
-        concepts: ['Chain rule derivative distributions', 'Second-moment tracking inside AdamW calculations'],
+        x: 300,
+        y: 390,
+        desc: 'Seminal paper introducing the backpropagation algorithm using the chain rule of calculus to train multi-layer feedforward networks.',
+        concepts: ['Chain rule partial derivatives propagation', 'Gradient-based weight adjustment minimization'],
         papers: [
-            { title: 'Learning Representations by Back-Propagating Errors', authors: 'D. Rumelhart, G. Hinton, R. Williams (1986)', url: 'https://www.nature.com/articles/323533a0.pdf' },
-            { title: 'Adam: A Method for Stochastic Optimization', authors: 'D. Kingma, J. Ba (2014)', url: 'https://arxiv.org/pdf/1412.6980.pdf' },
-            { title: 'Backpropagation & Chain Rule Math', authors: 'Andrej Karpathy (YouTube Video)', url: 'https://www.youtube.com/watch?v=VMj-3S1tku0' }
+            { title: 'Learning Representations by Back-Propagating Errors', authors: 'D. Rumelhart, G. Hinton, R. Williams (1986)', url: 'https://www.nature.com/articles/323533a0.pdf' }
         ]
     },
     {
-        id: 'ai_mlp',
-        text: 'Multi-Layer Perceptrons',
+        id: 'paper_lstm',
+        text: 'LSTM Cells (Hochreiter 1997)',
         type: 'ai',
-        parent: 'ai_base',
+        parent: 'ai_foundations',
         shape: 'tape_label',
-        x: 380,
-        y: 470,
-        desc: 'Building fully-connected neural feedforward layers, mapping input spaces to predictions via matrix weights.',
-        concepts: ['Fully-connected linear layer weights matrices', 'Loss function evaluations and backward pass updates'],
+        x: 180,
+        y: 440,
+        desc: 'Introduced the Long Short-Term Memory cell structure utilizing gating mechanisms to prevent vanishing gradients in sequential loops.',
+        concepts: ['Constant error carousels (CEC) gate dynamics', 'Cell state persistence across time-steps'],
         papers: [
-            { title: 'Neural Networks: Zero to Hero - Building Spells (MLP)', authors: 'Andrej Karpathy (YouTube Course)', url: 'https://www.youtube.com/watch?v=PaCmpygFfXo' }
+            { title: 'Long Short-Term Memory', authors: 'S. Hochreiter, J. Schmidhuber (1997)', url: 'https://arxiv.org/pdf/cs/9706301.pdf' }
         ]
     },
     {
-        id: 'ai_cnn',
-        text: 'CNNs & Spatial Grids',
+        id: 'paper_cnn',
+        text: 'LeNet CNN (LeCun 1998)',
         type: 'ai',
-        parent: 'ai_base',
+        parent: 'ai_foundations',
         shape: 'tape_label',
-        x: 490,
-        y: 430,
-        desc: 'Analyzing spatial patterns inside multi-dimensional grids using sliding kernel filters and pooling.',
-        concepts: ['Shared weights inside convolutional sliding filters', 'Pooling layers downsampling and translation invariance'],
+        x: 290,
+        y: 460,
+        desc: 'Seminal paper introducing convolutional layers, weight sharing, subsampling, and spatial filters for character recognition.',
+        concepts: ['Spatial weight sharing & translation invariance', 'Feature maps stacking & average pooling layers'],
         papers: [
-            { title: 'Stanford CS231n: Convolutional Neural Networks for Visual Recognition', authors: 'Fei-Fei Li, Justin Johnson (YouTube Playlist)', url: 'https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv' }
+            { title: 'Gradient-Based Learning Applied to Document Recognition', authors: 'Y. LeCun et al. (1998)', url: 'http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf' }
         ]
     },
     {
-        id: 'ai_rnn',
-        text: 'Recurrent Nets & LSTMs',
+        id: 'paper_alexnet',
+        text: 'AlexNet Vision (Krizhevsky 2012)',
         type: 'ai',
-        parent: 'ai_base',
+        parent: 'ai_foundations',
         shape: 'tape_label',
-        x: 500,
-        y: 350,
-        desc: 'Processing sequential data streams using recurrent feedback loops and memory gating mechanisms.',
-        concepts: ['Vanishing gradient mitigation via memory gates', 'Hidden state transitions across variable-length timelines'],
+        x: 400,
+        y: 450,
+        desc: 'The landmark deep CNN architecture utilizing GPU training, ReLU activations, and dropout regularization, initiating deep learning.',
+        concepts: ['ReLU non-linear activations bypassing saturation', 'Dual-GPU model parallel training architectures'],
         papers: [
-            { title: 'MIT 6.S191: Recurrent Neural Networks & Sequence Modeling', authors: 'Alexander Amini (YouTube Lecture)', url: 'https://www.youtube.com/watch?v=qjrad0V0uJE' }
+            { title: 'ImageNet Classification with Deep Convolutional Neural Networks', authors: 'A. Krizhevsky, I. Sutskever, G. Hinton (2012)', url: 'https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf' }
         ]
     },
     {
-        id: 'ai_embed',
-        text: 'Dense Embeddings',
+        id: 'paper_adam',
+        text: 'Adam Optimizer (Kingma 2014)',
         type: 'ai',
-        parent: 'ai_base',
+        parent: 'ai_foundations',
         shape: 'tape_label',
         x: 390,
-        y: 290,
-        desc: 'Projecting discrete linguistic tokens into low-dimensional continuous vector spaces representing semantics.',
-        concepts: ['Skip-gram and continuous bag-of-words architectures', 'Cosine similarity metric spaces for semantic relationships'],
+        y: 380,
+        desc: 'Introduced the Adam optimizer, adapting learning rates based on first and second moments of gradients.',
+        concepts: ['Exponential decay moving averages computation', 'Bias correction formulas for initial time-steps'],
         papers: [
-            { title: 'Efficient Estimation of Word Representations in Vector Space (Word2Vec)', authors: 'T. Mikolov et al. (2013)', url: 'https://arxiv.org/pdf/1301.3781.pdf' },
-            { title: 'Word Embeddings and Word2Vec Explained', authors: 'StatQuest with Josh Starmer (YouTube Video)', url: 'https://www.youtube.com/watch?v=viZrOnJclY0' }
+            { title: 'Adam: A Method for Stochastic Optimization', authors: 'D. Kingma, J. Ba (2014)', url: 'https://arxiv.org/pdf/1412.6980.pdf' }
         ]
     },
     {
-        id: 'ai_mem',
-        text: 'Memory Vectors & Indexes',
+        id: 'paper_resnet',
+        text: 'ResNet Skips (He 2015)',
         type: 'ai',
-        parent: 'ai_base',
+        parent: 'ai_foundations',
         shape: 'tape_label',
-        x: 380,
-        y: 370,
-        desc: 'Constructing persistent semantic memory stores via multidimensional indexing and similarity queries.',
-        concepts: ['Hierarchical Navigable Small World (HNSW) graph structures', 'Inner product and cosine similarity scoring scales'],
+        x: 410,
+        y: 300,
+        desc: 'Introduced residual learning frameworks using identity shortcut connections to enable training of extremely deep networks.',
+        concepts: ['Identity mapping shortcuts bypassing layers', 'Reformulated residual optimization targets mapping'],
         papers: [
-            { title: 'Vector Search Explained: From Embeddings to Vector Databases', authors: 'Pinecone / James Briggs (YouTube)', url: 'https://www.youtube.com/watch?v=klTvEwg3o14' }
+            { title: 'Deep Residual Learning for Image Recognition', authors: 'K. He, X. Zhang, S. Ren, J. Sun (2015)', url: 'https://arxiv.org/pdf/1512.03385.pdf' }
+        ]
+    },
+    {
+        id: 'paper_diffusion',
+        text: 'Diffusion DDPM (Ho 2020)',
+        type: 'ai',
+        parent: 'ai_foundations',
+        shape: 'tape_label',
+        x: 300,
+        y: 310,
+        desc: 'Established high-quality generative modeling using Markov chains with denoising score matching to construct data distributions.',
+        concepts: ['Forward noise scheduling and backward denoising loops', 'Variational bound optimization on joint likelihoods'],
+        papers: [
+            { title: 'Denoising Diffusion Probabilistic Models', authors: 'J. Ho, A. Jain, P. Abbeel (2020)', url: 'https://arxiv.org/pdf/2006.11239.pdf' }
         ]
     },
 
-    // Level 3: Modern Architectures Leaf Nodes
+    // Level 3: Transformers & Attention Papers
     {
-        id: 'ai_trans',
-        text: 'Self-Attention',
+        id: 'paper_attention',
+        text: 'Self-Attention (Vaswani 2017)',
         type: 'ai',
-        parent: 'ai_mod',
+        parent: 'ai_transformers',
         shape: 'tape_label',
-        x: 520,
+        x: 530,
         y: 80,
-        desc: 'Investigating query-key-value vector dot products forming the self-attention sequence links.',
-        concepts: ['Dot-product attention matrix calculation', 'Feed-forward token-wise transformations'],
+        desc: 'Seminal Attention Is All You Need paper replacing recurrent/convolutional layers with QKV self-attention projections.',
+        concepts: ['Scaled dot-product attention formula evaluation', 'Multi-head attention parallel representations matching'],
         papers: [
-            { title: 'Attention Is All You Need', authors: 'A. Vaswani et al. (2017)', url: 'https://arxiv.org/pdf/1706.03762.pdf' },
-            { title: 'GPT Architecture and Self-Attention from Scratch', authors: 'Andrej Karpathy (YouTube Video)', url: 'https://www.youtube.com/watch?v=kCc8FmEb1nY' }
+            { title: 'Attention Is All You Need', authors: 'A. Vaswani et al. (2017)', url: 'https://arxiv.org/pdf/1706.03762.pdf' }
         ]
     },
     {
-        id: 'ai_rag',
-        text: 'RAG Pipelines',
+        id: 'paper_bert',
+        text: 'BERT (Devlin 2018)',
         type: 'ai',
-        parent: 'ai_mod',
+        parent: 'ai_transformers',
         shape: 'tape_label',
         x: 520,
-        y: -10,
-        desc: 'Merging generative weights with external dense document search engines resolving factual recall problems.',
-        concepts: ['Document chunk embeddings generation', 'Vector cosine-similarity indexes queries'],
+        y: 0,
+        desc: 'Introduced deep bidirectional representations via Masked Language Modeling, setting records in language understanding.',
+        concepts: ['Masked Language Model (MLM) pre-training targets', 'Next Sentence Prediction (NSP) classifications'],
         papers: [
-            { title: 'Retrieval-Augmented Generation (RAG) System Design', authors: 'LangChain Tutorial (YouTube)', url: 'https://www.youtube.com/watch?v=tcqEUSNCn2s' }
+            { title: 'BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding', authors: 'J. Devlin et al. (2018)', url: 'https://arxiv.org/pdf/1810.04805.pdf' }
+        ]
+    },
+    {
+        id: 'paper_gpt3',
+        text: 'GPT-3 LLMs (Brown 2020)',
+        type: 'ai',
+        parent: 'ai_transformers',
+        shape: 'tape_label',
+        x: 510,
+        y: -80,
+        desc: 'Showed that scaling auto-regressive language models allows in-context few-shot learning without parameter updates.',
+        concepts: ['In-context meta-learning via task prompts', 'Autoregressive generation at 175-billion parameters scale'],
+        papers: [
+            { title: 'Language Models are Few-Shot Learners', authors: 'T. Brown et al. (2020)', url: 'https://arxiv.org/pdf/2005.14165.pdf' }
+        ]
+    },
+    {
+        id: 'paper_llama',
+        text: 'LLaMA Models (Touvron 2023)',
+        type: 'ai',
+        parent: 'ai_transformers',
+        shape: 'tape_label',
+        x: 390,
+        y: -90,
+        desc: 'Proved that open-source LLMs trained on larger token distributions can match proprietary models at smaller parameters scales.',
+        concepts: ['RoPE (Rotary Position Embedding) coordinate scaling', 'SwiGLU activation functions and RMSNorm normalization'],
+        papers: [
+            { title: 'LLaMA: Open and Efficient Foundation Language Models', authors: 'H. Touvron et al. (2023)', url: 'https://arxiv.org/pdf/2302.13971.pdf' }
         ]
     },
 
-    // Level 3: AI Infrastructure & MLOps Leaf Nodes
+    // Level 3: Retrieval & RAG Papers
     {
-        id: 'ml_dist',
-        text: 'Distributed Training',
+        id: 'paper_hnsw',
+        text: 'HNSW Graph Search (Malkov 2016)',
         type: 'ai',
-        parent: 'mlops',
+        parent: 'ai_retrieval',
         shape: 'tape_label',
         x: 560,
         y: 260,
-        desc: 'Scaling model training loops across multiple GPU cards using Data Parallelism (DDP) and ZeRO partitioning.',
-        concepts: ['FSDP (Fully Sharded Data Parallel) shard mappings', 'Pipeline Parallelism batch splitting schedules'],
+        desc: 'Introduced Hierarchical Navigable Small World (HNSW) graphs, setting baseline speeds for approximate nearest neighbors search.',
+        concepts: ['Multi-layer graph traversal searching structures', 'Logarithmic scaling of nearest neighbor search speeds'],
         papers: [
-            { title: 'Distributed Training & PyTorch DDP Explained', authors: 'PyTorch Developer Tutorial (YouTube)', url: 'https://www.youtube.com/watch?v=CvdWGsx85zo' }
+            { title: 'Efficient and Robust Approximate Nearest Neighbor Search Using Hierarchical Navigable Small World Graphs', authors: 'Y. Malkov, D. Yashunin (2016)', url: 'https://arxiv.org/pdf/1603.09320.pdf' }
         ]
     },
     {
-        id: 'ml_vdb',
-        text: 'Vector Databases',
+        id: 'paper_rag',
+        text: 'RAG Systems (Lewis 2020)',
         type: 'ai',
-        parent: 'mlops',
+        parent: 'ai_retrieval',
         shape: 'tape_label',
         x: 580,
         y: 180,
-        desc: 'Indices designed to search multi-dimensional embedding vectors using approximate nearest neighbors algorithms.',
-        concepts: ['HNSW graph indexing hierarchies', 'IVF-PQ quantization sharding strategies'],
+        desc: 'Seminal paper presenting Retrieval-Augmented Generation, pairing pre-trained seq2seq models with dense vector database lookups.',
+        concepts: ['Query-generator combined backpropagation optimization', 'Parametric generator memory vs non-parametric retrievable memory'],
         papers: [
-            { title: 'Vector Databases & Similarity Search Crash Course', authors: 'Qdrant Core Education (YouTube)', url: 'https://www.youtube.com/watch?v=0kFj237d-W8' }
+            { title: 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', authors: 'P. Lewis et al. (2020)', url: 'https://arxiv.org/pdf/2005.11401.pdf' }
         ]
     },
     {
-        id: 'ml_serve',
-        text: 'vLLM Serving Engine',
+        id: 'paper_dpr',
+        text: 'DPR Bi-Encoder (Karpukhin 2020)',
         type: 'ai',
-        parent: 'mlops',
+        parent: 'ai_retrieval',
         shape: 'tape_label',
         x: 540,
         y: 100,
-        desc: 'Optimizing inference speed with dynamic PagedAttention memory allocations to host LLM endpoints.',
-        concepts: ['KV Cache pagination memory management', 'Continuous batching scheduling algorithms'],
+        desc: 'Showed that dense passage retrieval using dual-encoder architectures outperforms classical TF-IDF or BM25 lexical matches.',
+        concepts: ['Dual-encoder bi-encoder architectures training', 'In-batch negative sampling loss optimization'],
         papers: [
-            { title: 'vLLM: LLM Serving at Scale with PagedAttention', authors: 'vLLM Dev Team Presentation (YouTube)', url: 'https://www.youtube.com/watch?v=52i3s6eA0p8' }
+            { title: 'Dense Passage Retrieval for Open-Domain Question Answering', authors: 'V. Karpukhin et al. (2020)', url: 'https://arxiv.org/pdf/2004.04906.pdf' }
+        ]
+    },
+    {
+        id: 'paper_realm',
+        text: 'REALM Retrieval (Guu 2020)',
+        type: 'ai',
+        parent: 'ai_retrieval',
+        shape: 'tape_label',
+        x: 460,
+        y: 250,
+        desc: 'Introduced pre-training language representation models with a latent retriever to query knowledge corpuses before prediction.',
+        concepts: ["Latent retriever joint training algorithms", "MIPS (Maximum Inner Product Search) dynamic index updates"],
+        papers: [
+            { title: 'REALM: Retrieval-Augmented Language Model Pre-Training', authors: 'K. Guu et al. (2020)', url: 'https://arxiv.org/pdf/2002.08909.pdf' }
         ]
     },
 
-    // Level 3: Advanced LLMs Leaf Nodes
+    // Level 3: RL, Agents & Alignment Papers
     {
-        id: 'llm_ft',
-        text: 'LoRA Fine-Tuning',
+        id: 'paper_dqn',
+        text: 'Deep Q-Networks (Mnih 2013)',
         type: 'ai',
-        parent: 'llm_adv',
+        parent: 'ai_agents',
         shape: 'tape_label',
         x: 620,
         y: -60,
-        desc: 'Adapting base LLMs with Low-Rank Adaptation matrices updates, keeping core weights frozen.',
-        concepts: ['Rank matrices (A & B) calculations', 'QLoRA 4-bit quantizations fine-tuning'],
+        desc: 'Landmark paper training deep neural networks directly from high-dimensional visual inputs to master Atari video games via RL.',
+        concepts: ['Experience replay memory buffers decoupling', 'Target Q-network weight synchronization schedules'],
         papers: [
-            { title: 'Fine-tuning LLMs with LoRA & QLoRA Tutorial', authors: 'Ludwig AI (YouTube Video)', url: 'https://www.youtube.com/watch?v=g68qg38Bc78' }
+            { title: 'Playing Atari with Deep Reinforcement Learning', authors: 'V. Mnih et al. (2013)', url: 'https://arxiv.org/pdf/1312.5602.pdf' }
         ]
     },
     {
-        id: 'llm_rlhf',
-        text: 'RLHF & Alignment',
+        id: 'paper_alphago',
+        text: 'AlphaGo (Silver 2016)',
         type: 'ai',
-        parent: 'llm_adv',
+        parent: 'ai_agents',
         shape: 'tape_label',
         x: 620,
         y: -140,
-        desc: 'Aligning LLMs with human expectations using preference datasets via DPO (Direct Preference Optimization) or PPO.',
-        concepts: ['Reward model scoring distributions', 'DPO math without training separate reward nets'],
+        desc: 'Mastered the game of Go using value and policy networks combined with Monte Carlo Tree Search, defeating world champions.',
+        concepts: ["Monte Carlo Tree Search (MCTS) path evaluations", "Supervised pre-training plus self-play reinforcement learning"],
         papers: [
-            { title: 'RLHF & LLM Alignment Pipelines', authors: 'Hugging Face Crash Course (YouTube)', url: 'https://www.youtube.com/watch?v=2MBJOuVqg80' }
+            { title: 'Mastering the Game of Go with Deep Neural Networks and Tree Search', authors: 'D. Silver et al. (2016)', url: 'https://www.nature.com/articles/nature16961.pdf' }
         ]
     },
     {
-        id: 'llm_agents',
-        text: 'Agentic Workflows',
+        id: 'paper_ppo',
+        text: 'PPO Optimization (Schulman 2017)',
         type: 'ai',
-        parent: 'llm_adv',
+        parent: 'ai_agents',
         shape: 'tape_label',
         x: 560,
         y: -220,
-        desc: 'Structuring multi-agent coordinate networks with cyclic logic loops to solve complex software creation tasks.',
-        concepts: ['Dynamic routing nodes between LLM loops', 'Shared scratchpad memory schemas'],
+        desc: 'Introduced Proximal Policy Optimization, clipping probability ratios to achieve stable gradient steps in reinforcement learning.',
+        concepts: ['Clipped surrogate objective functions scaling', 'Policy divergence penalties via KL variance constraints'],
         papers: [
-            { title: 'Generative Agents: Interactive Simulacra of Human Behavior', authors: 'J. Park, J. O\'Brien, C. Zhang, M. Morris, P. Liang, M. Bernstein (2023)', url: 'https://arxiv.org/pdf/2304.03442.pdf' },
-            { title: 'Autogen: Enabling Next-Gen LLM Applications', authors: 'Q. Wu et al. (2023)', url: 'https://arxiv.org/pdf/2308.08155.pdf' }
+            { title: 'Proximal Policy Optimization Algorithms', authors: 'J. Schulman et al. (2017)', url: 'https://arxiv.org/pdf/1707.06347.pdf' }
+        ]
+    },
+    {
+        id: 'paper_rlhf',
+        text: 'RLHF Alignment (Ouyang 2022)',
+        type: 'ai',
+        parent: 'ai_agents',
+        shape: 'tape_label',
+        x: 640,
+        y: -280,
+        desc: 'InstructGPT paper using Reinforcement Learning from Human Feedback (RLHF) to align language model completions with human intent.',
+        concepts: ['Reward model scaling based on pairwise comparisons', 'PPO fine-tuning loops evaluating completion scoring'],
+        papers: [
+            { title: 'Training Language Models to Follow Instructions with Human Feedback', authors: 'L. Ouyang et al. (2022)', url: 'https://arxiv.org/pdf/2203.02155.pdf' }
+        ]
+    },
+    {
+        id: 'paper_dpo',
+        text: 'DPO Alignment (Rafailov 2023)',
+        type: 'ai',
+        parent: 'ai_agents',
+        shape: 'tape_label',
+        x: 480,
+        y: -280,
+        desc: 'Introduced Direct Preference Optimization, bypasses reward modeling or RLHF loops to align models using a direct closed-form objective.',
+        concepts: ["Closed-form optimization targeting log-likelihood ratios", "Eliminating policy sampling and actor-critic networks training"],
+        papers: [
+            { title: 'Direct Preference Optimization: Your Language Model is Secretly a Reward Model', authors: 'R. Rafailov et al. (2023)', url: 'https://arxiv.org/pdf/2305.18290.pdf' }
+        ]
+    },
+    {
+        id: 'paper_react',
+        text: 'ReAct Agent Loops (Yao 2022)',
+        type: 'ai',
+        parent: 'ai_agents',
+        shape: 'tape_label',
+        x: 440,
+        y: -220,
+        desc: 'Developed the ReAct framework, enabling LLMs to generate reasoning traces and task-specific actions in an interleaved manner.',
+        concepts: ['Interleaved reasoning thoughts and action inputs', 'External API/tool integration execution logic'],
+        papers: [
+            { title: 'ReAct: Synergizing Reasoning and Acting in Language Models', authors: 'S. Yao et al. (2022)', url: 'https://arxiv.org/pdf/2210.03629.pdf' }
+        ]
+    },
+    {
+        id: 'paper_simulacra',
+        text: 'Generative Agents (Park 2023)',
+        type: 'ai',
+        parent: 'ai_agents',
+        shape: 'tape_label',
+        x: 380,
+        y: -200,
+        desc: 'Created computational agents that simulate human behavior, complete with reflection architectures and dynamic associative memories.',
+        concepts: ['Reflection and memory retrieval score graphs', 'Dynamic planning and execution associative engines'],
+        papers: [
+            { title: 'Generative Agents: Interactive Simulacra of Human Behavior', authors: 'J. Park et al. (2023)', url: 'https://arxiv.org/pdf/2304.03442.pdf' }
         ]
     }
 ];
