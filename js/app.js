@@ -46,7 +46,7 @@ const NODES = [
             'High-throughput bindings for machine learning computation'
         ],
         papers: [
-            { title: 'Computer Science & Programming Fundamentals Course', authors: 'CS50 Harvard (YouTube Course)', url: 'https://www.youtube.com/playlist?list=PLhQjrBD2T382_R182fhXOhyDcPkAsGoVM' }
+            { title: 'Computer Science & Programming Fundamentals Course', authors: 'CS50 Harvard (Official Course Page)', url: 'https://cs50.harvard.edu/x/' }
         ]
     },
     {
@@ -64,7 +64,7 @@ const NODES = [
             'API Gateways, reverse proxies, and rate control structures'
         ],
         papers: [
-            { title: 'System Design Course for Beginners', authors: 'FreeCodeCamp / Developer Roadmaps (YouTube Course)', url: 'https://www.youtube.com/watch?v=m8I0fJipeCc' }
+            { title: 'System Design Course for Beginners', authors: 'Developer Roadmaps (System Design Guide)', url: 'https://roadmap.sh/system-design' }
         ]
     },
     {
@@ -82,7 +82,7 @@ const NODES = [
             'Cyclic loops multi-agent execution graphs'
         ],
         papers: [
-            { title: 'AI for Everyone Course', authors: 'Andrew Ng / DeepLearning.AI (YouTube Playlist)', url: 'https://www.youtube.com/playlist?list=PLkDaE6sC76OT6715fF1Sg0n6e5wO_gHEx' }
+            { title: 'AI for Everyone Course', authors: 'Andrew Ng / DeepLearning.AI (Official Course)', url: 'https://www.deeplearning.ai/courses/ai-for-everyone/' }
         ]
     },
 
@@ -102,7 +102,7 @@ const NODES = [
             'Pybind11 C-extension wrappers'
         ],
         papers: [
-            { title: 'Python Programming Full Course', authors: 'FreeCodeCamp / Programming with Mosh (YouTube)', url: 'https://www.youtube.com/watch?v=_uQrJ0TkZlc' }
+            { title: 'Python Programming Tutorial', authors: 'Python Software Foundation (Official Docs)', url: 'https://docs.python.org/3/tutorial/' }
         ]
     },
     {
@@ -120,7 +120,7 @@ const NODES = [
             'High-throughput microservices APIs'
         ],
         papers: [
-            { title: 'Go Programming Tutorial for Beginners', authors: 'FreeCodeCamp / Tech with Tim (YouTube)', url: 'https://www.youtube.com/watch?v=YS4e4q9oBaU' }
+            { title: 'Go Programming Tutorial for Beginners', authors: 'Golang Tour (Official Guide)', url: 'https://go.dev/tour/' }
         ]
     },
     {
@@ -138,7 +138,7 @@ const NODES = [
             'Compilers optimizations and SIMD alignments'
         ],
         papers: [
-            { title: 'C++ Programming Full Course', authors: 'The Cherno (YouTube Course Playlist)', url: 'https://www.youtube.com/playlist?list=PLlrATfgbY1gpN0714n8vJ4xegM8QWzSFG' }
+            { title: 'C++ Reference Documentation', authors: 'C++ Reference Group (Official Reference)', url: 'https://en.cppreference.com/w/' }
         ]
     },
     {
@@ -156,7 +156,7 @@ const NODES = [
             'WASM compilation for edge inference containers'
         ],
         papers: [
-            { title: 'Rust Programming Course for Beginners', authors: 'FreeCodeCamp (YouTube Video)', url: 'https://www.youtube.com/watch?v=BpPEoGMzHyA' }
+            { title: 'Rust Programming Language Book', authors: 'Steve Klabnik, Carol Nichols (Official Book)', url: 'https://doc.rust-lang.org/book/' }
         ]
     },
 
@@ -172,7 +172,7 @@ const NODES = [
         desc: 'Analyzing async event structures in Python for non-blocking I/O multiplexing.',
         concepts: ['Generators and awaitable task executions', 'Task scheduling queues in Python standard library'],
         papers: [
-            { title: 'Python Asyncio Complete Tutorial', authors: 'SuperFastPython Guide (YouTube Course)', url: 'https://www.youtube.com/watch?v=bDwV3T2N6vU' }
+            { title: 'Python Asyncio Library Documentation', authors: 'Python Software Foundation (Official Docs)', url: 'https://docs.python.org/3/library/asyncio.html' }
         ]
     },
     {
@@ -186,7 +186,7 @@ const NODES = [
         desc: 'Bypassing the Python Global Interpreter Lock to achieve true CPU core scaling.',
         concepts: ['Multiprocessing memory pipes', 'Releasing GIL thread locks inside custom compiled C-modules'],
         papers: [
-            { title: 'Python GIL & Multiprocessing Systems Design', authors: 'David Beazley Lecture (YouTube)', url: 'https://www.youtube.com/watch?v=Obt-vdsClZI' }
+            { title: 'Python Global Interpreter Lock Documentation', authors: 'Python Software Foundation (Official Glossary)', url: 'https://docs.python.org/3/glossary.html#term-global-interpreter-lock' }
         ]
     },
     {
@@ -216,7 +216,7 @@ const NODES = [
         desc: 'Applying idiomatic Go patterns to coordinate massive pools of background workers.',
         concepts: ['Fan-In and Fan-Out thread multiplexing', 'Select statements with timeout channel cancel contexts'],
         papers: [
-            { title: 'Go Concurrency Patterns', authors: 'Rob Pike Google I/O Lecture (YouTube)', url: 'https://www.youtube.com/watch?v=f6kdp27TYZs' }
+            { title: 'Go Concurrency Pipelines and Fan-Out', authors: 'Sameer Ajmani (Official Go Blog)', url: 'https://go.dev/blog/pipelines' }
         ]
     },
     {
@@ -230,7 +230,7 @@ const NODES = [
         desc: 'Building highly resilient JSON/gRPC microservice engines in Go.',
         concepts: ['Protocol Buffers schema definitions', 'Reverse proxies, circuit breakers, and trace headers sharing'],
         papers: [
-            { title: 'Building Microservices in Go', authors: 'Nic Jackson (YouTube Playlist)', url: 'https://www.youtube.com/playlist?list=PLmD8u-IF52KzJkU96T1w42C97978T-8z6' }
+            { title: 'Building Microservices in Go Guidelines', authors: 'Go Dev Authors (Official Docs)', url: 'https://go.dev/doc/' }
         ]
     },
     {
@@ -274,7 +274,7 @@ const NODES = [
         desc: 'Writing CUDA kernels to offload tensor calculations directly to parallel hardware arithmetic grids.',
         concepts: ['Thread-block multi-dimensional grids alignment', 'Shared GPU memory optimization techniques'],
         papers: [
-            { title: 'CUDA C++ Programming Crash Course', authors: 'CUDA Education (YouTube)', url: 'https://www.youtube.com/watch?v=4APX_y1P7-8' }
+            { title: 'CUDA C++ Programming Guide', authors: 'NVIDIA Documentation (Official Guide)', url: 'https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html' }
         ]
     },
     {
@@ -304,7 +304,7 @@ const NODES = [
         desc: 'Achieving C-level memory speed without garbage collectors using Rust ownership.',
         concepts: ['Lifetimes variables compiler enforcement', 'Safe multi-threaded sharing bounds (Sync/Send traits)'],
         papers: [
-            { title: 'Rust Concurrency & Advanced Safety Course', authors: 'Jon Gjengset (YouTube Playlist)', url: 'https://www.youtube.com/playlist?list=PLqbS7v3f_WYk0sXzGsn48qgG0nBf17v0S' }
+            { title: 'Rust Shared-State Concurrency Guides', authors: 'Rust Doc Authors (Official Book)', url: 'https://doc.rust-lang.org/book/ch16-00-concurrency.html' }
         ]
     },
     {
@@ -318,7 +318,7 @@ const NODES = [
         desc: 'Compiling core calculation modules into sandboxed WebAssembly execution packages for edge CDN routers.',
         concepts: ['Wasmtime isolated execution sandbox config', 'V8 bindings runtime integrations'],
         papers: [
-            { title: 'WebAssembly Edge Runtimes with Rust', authors: 'Second State WASM Tutorial (Video)', url: 'https://www.youtube.com/watch?v=1F_4-y_pMhk' }
+            { title: 'WebAssembly Edge Runtimes with Rust Book', authors: 'RustWASM Group (Official Guide)', url: 'https://rustwasm.github.io/docs/book/' }
         ]
     },
     {
@@ -357,7 +357,7 @@ const NODES = [
             { title: 'Dynamo: Amazon\'s Highly Available Key-value Store', authors: 'G. DeCandia et al. (2007)', url: 'https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf' },
             { title: 'Spanner: Google\'s Globally-Distributed Database', authors: 'J. Corbett et al. (2012)', url: 'https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/39729.pdf' },
             { title: 'Kafka: a Distributed Messaging System for Log Processing', authors: 'J. Kreps et al. (2011)', url: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2011/06/kafka_sosp2011.pdf' },
-            { title: 'MIT 6.824: Distributed Systems Course', authors: 'Robert Morris (YouTube Course)', url: 'https://www.youtube.com/playlist?list=PLrw6ARFr5ApYPR2t4eB4S6ZyiVCDspRnd' }
+            { title: 'MIT 6.824: Distributed Systems Course Syllabus & Notes', authors: 'Robert Morris (MIT CSAIL Website)', url: 'https://pdos.csail.mit.edu/6.824/' }
         ]
     },
     {
@@ -375,7 +375,7 @@ const NODES = [
             'API Gateway orchestration routes'
         ],
         papers: [
-            { title: 'System Design Interview - Building Scalable Systems', authors: 'Alex Xu ByteByteGo (YouTube Channel)', url: 'https://www.youtube.com/@ByteByteGo' }
+            { title: 'System Design Primer Roadmap & Guides', authors: 'Donne Martin (Interactive GitHub Roadmap)', url: 'https://github.com/donnemartin/system-design-primer' }
         ]
     },
     {
@@ -393,7 +393,7 @@ const NODES = [
             'NewSQL global atomic clocks consensus'
         ],
         papers: [
-            { title: 'Database Systems & Architecture Lecture Series', authors: 'CMU Database Group / Andy Pavlo (YouTube)', url: 'https://www.youtube.com/playlist?list=PLSE8ODhjFmxmas09J33vX4bF28f_d90jR' }
+            { title: 'CMU 15-445/645 Database Systems Course Webpage', authors: 'Andy Pavlo (CMU Database Group)', url: 'https://15445.courses.cs.cmu.edu/' }
         ]
     },
     {
@@ -429,7 +429,7 @@ const NODES = [
             'UML class diagrams and interface specifications'
         ],
         papers: [
-            { title: 'Low-Level Design (LLD) Boot Camp & Patterns', authors: 'Karan S. (YouTube Course Playlist)', url: 'https://www.youtube.com/playlist?list=PL6W8xrUL92_yyG6n9v1n1fT97pPgp5_2b' }
+            { title: 'Low-Level Design (LLD) Design Patterns Catalog', authors: 'Refactoring Guru (Official Patterns Guide)', url: 'https://refactoring.guru/design-patterns' }
         ]
     },
     {
@@ -447,7 +447,7 @@ const NODES = [
             'High availability and disaster recovery planning'
         ],
         papers: [
-            { title: 'High-Level Design (HLD) Masterclass', authors: 'Gaurav Sen / System Design (YouTube)', url: 'https://www.youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPy92c' }
+            { title: 'System Design Primer - Core High-Level Architecture Rules', authors: 'Donne Martin (Interactive GitHub Roadmap)', url: 'https://github.com/donnemartin/system-design-primer' }
         ]
     },
 
@@ -465,7 +465,7 @@ const NODES = [
         papers: [
             { title: 'In Search of an Understandable Consensus Algorithm (Raft)', authors: 'D. Ongaro, J. Ousterhout (2014)', url: 'https://raft.github.io/raft.pdf' },
             { title: 'Paxos Made Simple', authors: 'L. Lamport (2001)', url: 'https://lamport.azurewebsites.net/pubs/paxos-simple.pdf' },
-            { title: 'Raft Consensus Algorithm Explained', authors: 'Visual interactive guide (Video)', url: 'https://www.youtube.com/watch?v=vYp4LYbnnW8' }
+            { title: 'Raft Consensus Algorithm Webpage & Visualizer', authors: 'Raft Group (Official Webpage)', url: 'https://raft.github.io/' }
         ]
     },
     {
@@ -495,7 +495,7 @@ const NODES = [
         concepts: ['Sequential disk append-only write loops', 'Consumer group partition balance controls'],
         papers: [
             { title: 'Kafka: a Distributed Messaging System for Log Processing', authors: 'J. Kreps, N. Narkhede, A. Rao (2011)', url: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2011/06/kafka_sosp2011.pdf' },
-            { title: 'Apache Kafka Crash Course', authors: 'Hussein Nasser (YouTube Tutorial)', url: 'https://www.youtube.com/watch?v=R873BlNVUB4' }
+            { title: 'Apache Kafka Official Documentation', authors: 'Apache Software Foundation (Official Docs)', url: 'https://kafka.apache.org/documentation/' }
         ]
     },
 
@@ -511,7 +511,7 @@ const NODES = [
         desc: 'Horizontal partition sharding of relational tables across separate SQL nodes using hashing functions.',
         concepts: ['Range-based vs Hash-based sharding maps', 'Managing multi-node join constraints'],
         papers: [
-            { title: 'Database Sharding Crash Course', authors: 'ByteByteGo (YouTube Video)', url: 'https://www.youtube.com/watch?v=5faMjKuB9bc' }
+            { title: 'Database Sharding Design Architecture Guide', authors: 'Microsoft Azure Patterns (Official Guide)', url: 'https://learn.microsoft.com/en-us/azure/architecture/patterns/sharding' }
         ]
     },
     {
@@ -525,7 +525,7 @@ const NODES = [
         desc: 'Tradeoffs of key-value, document, graph, and wide-column structures (Cassandra/MongoDB/DynamoDB).',
         concepts: ['CAP theorem partition boundaries', 'LSM tree engines vs B-Tree write speeds'],
         papers: [
-            { title: 'SQL vs NoSQL System Design Tradeoffs', authors: 'FreeCodeCamp Course (YouTube)', url: 'https://www.youtube.com/watch?v=d_jGI8T9H6U' }
+            { title: 'NoSQL Databases Design Tradeoffs', authors: 'Amazon Web Services (Official Guide)', url: 'https://aws.amazon.com/nosql/' }
         ]
     },
     {
@@ -554,7 +554,7 @@ const NODES = [
         concepts: ['Two-phase locking and MVCC concurrency', 'Write-ahead logging (WAL) for durability guarantees'],
         papers: [
             { title: 'Granularity of Locks and System R Transaction Isolation', authors: 'Jim Gray et al. (1975)', url: 'https://www.cs.berkeley.edu/~brewer/cs262b/SystemR.pdf' },
-            { title: 'ACID Transactions Explained', authors: 'Hussein Nasser (YouTube Video)', url: 'https://www.youtube.com/watch?v=y2yA3nUor8w' }
+            { title: 'Database Transaction ACID Guarantees', authors: 'Wikipedia Contributors (Technical Wiki Reference)', url: 'https://en.wikipedia.org/wiki/ACID' }
         ]
     },
 
@@ -570,7 +570,7 @@ const NODES = [
         desc: 'Integrating a vendor-agnostic specification to collect and export metrics, logs, and trace spans.',
         concepts: ['Distributed context propagation', 'Collector architecture pipelines config'],
         papers: [
-            { title: 'OpenTelemetry Crash Course for Engineers', authors: 'TechWorld with Nana (YouTube Video)', url: 'https://www.youtube.com/watch?v=lB_v2SgA5xM' }
+            { title: 'OpenTelemetry Documentation & Specifications', authors: 'OpenTelemetry Group (Official Docs)', url: 'https://opentelemetry.io/docs/' }
         ]
     },
     {
@@ -584,7 +584,7 @@ const NODES = [
         desc: 'Deploying pull-based systems to scrape metrics and evaluate system status alerts.',
         concepts: ['PromQL multidimensional queries', 'Alertmanager trigger hooks'],
         papers: [
-            { title: 'Monitoring Systems with Prometheus & Grafana', authors: 'FreeCodeCamp Tutorial (YouTube)', url: 'https://www.youtube.com/watch?v=481E2R1m2t4' }
+            { title: 'Monitoring Systems with Prometheus Documentation', authors: 'Prometheus Group (Official Docs)', url: 'https://prometheus.io/docs/introduction/overview/' }
         ]
     },
     {
@@ -614,7 +614,7 @@ const NODES = [
         desc: 'Deploying in-memory data grids to shield database layers from heavy query volumes.',
         concepts: ['Eviction algorithms (LRU, LFU, TTL indices)', 'Cache stampede mitigation using mutex locks'],
         papers: [
-            { title: 'Redis Crash Course for Beginners', authors: 'Traversy Media (YouTube Tutorial)', url: 'https://www.youtube.com/watch?v=jgpVdJB2sKQ' }
+            { title: 'Redis Cache Architecture Documentation', authors: 'Redis Software (Official Docs)', url: 'https://redis.io/docs/' }
         ]
     },
     {
@@ -628,7 +628,7 @@ const NODES = [
         desc: 'Distributing incoming traffic and caching pages close to local users.',
         concepts: ['Layer 4 vs Layer 7 TCP routing calculations', 'Anycast routing protocols configuration'],
         papers: [
-            { title: 'Load Balancers & CDNs Explained', authors: 'ByteByteGo System Design (YouTube)', url: 'https://www.youtube.com/watch?v=Kz6E11n5z2U' }
+            { title: 'HTTP Load Balancing Architecture & configuration', authors: 'NGINX Admin Guide (Official Guide)', url: 'https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/' }
         ]
     },
     {
@@ -642,7 +642,7 @@ const NODES = [
         desc: 'Consolidating incoming api calls, managing rate-limits, and token evaluations at the entry gate.',
         concepts: ['Token Bucket and Leaky Bucket rate limiting', 'gRPC-Web to JSON protocol translation layers'],
         papers: [
-            { title: 'API Gateway Design Pattern in Microservices', authors: 'Hussein Nasser (YouTube Video)', url: 'https://www.youtube.com/watch?v=1y1gK3S1C80' }
+            { title: 'API Gateway Design Pattern in Microservices', authors: 'Microsoft Azure Design (Official Guide)', url: 'https://learn.microsoft.com/en-us/azure/architecture/microservices/design/gateway' }
         ]
     },
     {
@@ -656,7 +656,7 @@ const NODES = [
         desc: 'Designing decoupled software components using single responsibility, open-closed, and dependency inversion principles.',
         concepts: ['Dependency injection frameworks', 'Interface contracts and interface segregation rules'],
         papers: [
-            { title: 'Design Principles and Design Patterns (SOLID)', authors: 'Robert C. Martin (Clean Architecture)', url: 'https://www.youtube.com/watch?v=zHiWqnTWsn4' }
+            { title: 'Design Principles and Design Patterns (SOLID)', authors: 'Wikipedia Contributors (Technical Wiki Reference)', url: 'https://en.wikipedia.org/wiki/SOLID' }
         ]
     },
     {
@@ -712,7 +712,7 @@ const NODES = [
         desc: 'Structuring asynchronous inter-service workflows using message publishers, subscribers, and transaction logs.',
         concepts: ['Outbox patterns for database transactions', 'Idempotent event consumers handling network repeats'],
         papers: [
-            { title: 'Event-Driven System Architecture Guides', authors: 'Confluent / Martin Kleppmann (YouTube Series)', url: 'https://www.youtube.com/playlist?list=PLa7VYi0y5170dpeM4A1Xb32KUpfG5hD2p' }
+            { title: 'AWS Event-Driven Architecture Design Guide', authors: 'Amazon Web Services (Official Guide)', url: 'https://aws.amazon.com/event-driven-architecture/' }
         ]
     },
     {
@@ -726,7 +726,7 @@ const NODES = [
         desc: 'Designing fault-tolerant systems with geo-replication, automated health check failures, and data recovery steps.',
         concepts: ['Active-Active vs Active-Passive multi-region config', 'RTO (Recovery Time Objective) and RPO targets estimation'],
         papers: [
-            { title: 'AWS High Availability & Disaster Recovery Architecture', authors: 'Amazon Web Services (YouTube Course)', url: 'https://www.youtube.com/watch?v=n7z5tW5E_kY' }
+            { title: 'AWS High Availability & Disaster Recovery Architecture', authors: 'Amazon Web Services (Official Whitepaper)', url: 'https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html' }
         ]
     },
     {
@@ -761,7 +761,7 @@ const NODES = [
             'Diffusion noise estimation models'
         ],
         papers: [
-            { title: 'Neural Networks: Zero to Hero Course', authors: 'Andrej Karpathy (YouTube Course)', url: 'https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUb5yFo' }
+            { title: 'Neural Networks: Zero to Hero Course Homepage', authors: 'Andrej Karpathy (Official Course)', url: 'https://karpathy.ai/zero-to-hero.html' }
         ]
     },
     {
@@ -780,7 +780,7 @@ const NODES = [
             'Efficient rotary position embeddings (RoPE)'
         ],
         papers: [
-            { title: 'Transformers & LLM Foundations Course', authors: 'Andrej Karpathy (YouTube Guide)', url: 'https://www.youtube.com/watch?v=kCc8FmEb1nY' }
+            { title: 'Transformers & NLP Architecture Course', authors: 'Hugging Face (Official NLP Course)', url: 'https://huggingface.co/learn/nlp-course/chapter1/1' }
         ]
     },
     {
