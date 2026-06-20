@@ -34,33 +34,33 @@ function createCorkTexture() {
     tempCanvas.height = 256;
     const tempCtx = tempCanvas.getContext('2d');
     
-    // Dark desaturated old cork base
-    tempCtx.fillStyle = '#423225';
+    // Base cork warm color
+    tempCtx.fillStyle = '#bc9673';
     tempCtx.fillRect(0, 0, 256, 256);
     
-    // Draw fine organic noise specks (desaturated dark and dusty grey-brown)
+    // Draw fine organic noise specks
     for (let i = 0; i < 15000; i++) {
         const x = Math.random() * 256;
         const y = Math.random() * 256;
         const size = Math.random() * 1.5;
         const rand = Math.random();
         if (rand < 0.5) {
-            tempCtx.fillStyle = 'rgba(18, 12, 8, ' + (Math.random() * 0.15 + 0.05) + ')';
+            tempCtx.fillStyle = 'rgba(109, 78, 51, ' + (Math.random() * 0.15 + 0.05) + ')';
         } else {
-            tempCtx.fillStyle = 'rgba(95, 82, 72, ' + (Math.random() * 0.15 + 0.05) + ')';
+            tempCtx.fillStyle = 'rgba(235, 210, 180, ' + (Math.random() * 0.2 + 0.05) + ')';
         }
         tempCtx.beginPath();
         tempCtx.arc(x, y, size, 0, Math.PI * 2);
         tempCtx.fill();
     }
     
-    // Draw aged wood pulp patches
+    // Draw wood pulp patches
     for (let i = 0; i < 40; i++) {
         const x = Math.random() * 256;
         const y = Math.random() * 256;
         const w = Math.random() * 15 + 5;
         const h = Math.random() * 8 + 3;
-        tempCtx.fillStyle = 'rgba(25, 18, 12, 0.2)';
+        tempCtx.fillStyle = 'rgba(120, 85, 55, 0.08)';
         tempCtx.beginPath();
         tempCtx.ellipse(x, y, w, h, Math.random() * Math.PI, 0, Math.PI * 2);
         tempCtx.fill();
@@ -153,8 +153,12 @@ function drawFittedText(c, text, maxWidth, defaultSize, fontFamily, bold = false
 
 // Master Draw Loop
 function draw() {
-    // Clear canvas to reveal CSS background wall
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // Fill cork board pattern
+    if (!corkPattern) {
+        createCorkTexture();
+    }
+    ctx.fillStyle = corkPattern;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
     
     // Draw outer wooden frame shadow
     ctx.save();
