@@ -1,6 +1,6 @@
 // Theme mappings for the classification legend & paper node decorations
 const THEMES = {
-    programming: { bg: '#ebd2b4', border: '#c0392b', badge: 'programming', name: 'Systems Programming', stringColor: '#c0392b' },
+    programming: { bg: '#ebd2b4', border: '#c0392b', badge: 'programming', name: 'Programming', stringColor: '#c0392b' },
     architecture: { bg: '#e0cfa9', border: '#d35400', badge: 'architecture', name: 'System Architecture', stringColor: '#d35400' },
     ai: { bg: '#d4e6cf', border: '#27ae60', badge: 'ai', name: 'Artificial Intelligence', stringColor: '#27ae60' },
     dsa: { bg: '#d6e4f0', border: '#2980b9', badge: 'dsa', name: 'DSA & Algorithms', stringColor: '#2980b9' },
@@ -31,13 +31,13 @@ const NODES = [
     // Level 1: Category Hubs (represented as large torn newspaper headings)
     {
         id: 'prog',
-        text: 'Systems Programming',
+        text: 'Programming',
         type: 'programming',
         parent: 'root',
         shape: 'newspaper_clipping',
         x: -220,
         y: 100,
-        desc: 'Analyzing low-level execution mechanics, memory optimizations, concurrent programming patterns, and compile-time boundaries.',
+        desc: 'Analyzing execution mechanics, programming paradigms, concurrent code patterns, compile-time boundaries, and language-specific platforms.',
         concepts: [
             'Manual and automatic memory management details',
             'Async event loops and non-blocking sockets execution',
@@ -394,6 +394,38 @@ const NODES = [
         ],
         papers: []
     },
+    {
+        id: 'arch_lld',
+        text: 'Low-Level Design',
+        type: 'architecture',
+        parent: 'arch',
+        shape: 'note_card',
+        x: -150,
+        y: -120,
+        desc: 'Investigating object-oriented analysis, design patterns, schema generation, code decoupling, and interface segregation.',
+        concepts: [
+            'SOLID design principles application',
+            'Creational, Structural, and Behavioral patterns',
+            'UML class diagrams and interface specifications'
+        ],
+        papers: []
+    },
+    {
+        id: 'arch_hld',
+        text: 'High-Level Design',
+        type: 'architecture',
+        parent: 'arch',
+        shape: 'note_card',
+        x: 150,
+        y: -120,
+        desc: 'Analyzing large-scale system topology, database federation, caching hierarchies, CDN distribution, and global networking.',
+        concepts: [
+            'Monolithic vs Microservice decomposition',
+            'Event-driven messaging and pub-sub pipelines',
+            'High availability and disaster recovery planning'
+        ],
+        papers: []
+    },
 
     // Level 3: Distributed Systems Leaf Nodes (linked to corresponding papers & courses)
     {
@@ -574,6 +606,90 @@ const NODES = [
             { title: 'API Gateway Design Pattern in Microservices', authors: 'Hussein Nasser (YouTube Video)', url: 'https://www.youtube.com/watch?v=1y1gK3S1C80' }
         ]
     },
+    {
+        id: 'lld_solid',
+        text: 'SOLID & Clean Code',
+        type: 'architecture',
+        parent: 'arch_lld',
+        shape: 'tape_label',
+        x: -280,
+        y: -160,
+        desc: 'Designing decoupled software components using single responsibility, open-closed, and dependency inversion principles.',
+        concepts: ['Dependency injection frameworks', 'Interface contracts and interface segregation rules'],
+        papers: [
+            { title: 'Design Principles and Design Patterns (SOLID)', authors: 'Robert C. Martin (Clean Architecture)', url: 'https://www.youtube.com/watch?v=zHiWqnTWsn4' }
+        ]
+    },
+    {
+        id: 'lld_patterns',
+        text: 'Design Patterns',
+        type: 'architecture',
+        parent: 'arch_lld',
+        shape: 'tape_label',
+        x: -240,
+        y: -90,
+        desc: 'Applying Gang of Four patterns (Singleton, Factory, Strategy, Observer) to solve recurring coding structure challenges.',
+        concepts: ['Creational vs structural vs behavioral patterns', 'Composition over inheritance paradigms'],
+        papers: [
+            { title: 'Design Patterns in Object-Oriented Programming', authors: 'Christopher Okhravi (YouTube Course)', url: 'https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ybYBJKgPKg24L' }
+        ]
+    },
+    {
+        id: 'lld_schema',
+        text: 'Schema & API Design',
+        type: 'architecture',
+        parent: 'arch_lld',
+        shape: 'tape_label',
+        x: -160,
+        y: -30,
+        desc: 'Creating cohesive, type-safe API schemas and database models using industry standard rules.',
+        concepts: ['RESTful interface standards and gRPC protocol buffers', 'SQL schema normalizations and indexing models'],
+        papers: [
+            { title: 'API Design Patterns & Principles', authors: 'Google Cloud Tech / JJ Geewax (YouTube)', url: 'https://www.youtube.com/watch?v=P0a7pE-K1F8' }
+        ]
+    },
+    {
+        id: 'hld_micro',
+        text: 'Microservices & SOA',
+        type: 'architecture',
+        parent: 'arch_hld',
+        shape: 'tape_label',
+        x: 280,
+        y: -160,
+        desc: 'Decomposing applications into specialized, independently deployable services with service discovery and mesh layers.',
+        concepts: ['Service discovery and routing registries', 'Saga pattern managing multi-service database writes'],
+        papers: [
+            { title: 'Microservices Architecture and System Design', authors: 'GOTO Conferences (YouTube Playlist)', url: 'https://www.youtube.com/playlist?list=PLM-T7aFadMnhS1q_6LhVv0m9LdZtI0g96' }
+        ]
+    },
+    {
+        id: 'hld_event',
+        text: 'Event-Driven Architecture',
+        type: 'architecture',
+        parent: 'arch_hld',
+        shape: 'tape_label',
+        x: 240,
+        y: -90,
+        desc: 'Structuring asynchronous inter-service workflows using message publishers, subscribers, and transaction logs.',
+        concepts: ['Outbox patterns for database transactions', 'Idempotent event consumers handling network repeats'],
+        papers: [
+            { title: 'Event-Driven System Architecture Guides', authors: 'Confluent / Martin Kleppmann (YouTube Series)', url: 'https://www.youtube.com/playlist?list=PLa7VYi0y5170dpeM4A1Xb32KUpfG5hD2p' }
+        ]
+    },
+    {
+        id: 'hld_dr',
+        text: 'DR & Availability',
+        type: 'architecture',
+        parent: 'arch_hld',
+        shape: 'tape_label',
+        x: 160,
+        y: -30,
+        desc: 'Designing fault-tolerant systems with geo-replication, automated health check failures, and data recovery steps.',
+        concepts: ['Active-Active vs Active-Passive multi-region config', 'RTO (Recovery Time Objective) and RPO targets estimation'],
+        papers: [
+            { title: 'AWS High Availability & Disaster Recovery Architecture', authors: 'Amazon Web Services (YouTube Course)', url: 'https://www.youtube.com/watch?v=n7z5tW5E_kY' }
+        ]
+    },
 
     // Level 2: Sub-Hubs under Artificial Intelligence
     {
@@ -659,7 +775,7 @@ const NODES = [
         type: 'ai',
         parent: 'ai_base',
         shape: 'tape_label',
-        x: 320,
+        x: 270,
         y: 400,
         desc: 'Mathematical convergence using partial derivatives and adaptive weight optimization parameters.',
         concepts: ['Chain rule derivative distributions', 'Second-moment tracking inside AdamW calculations'],
@@ -670,18 +786,74 @@ const NODES = [
         ]
     },
     {
-        id: 'ai_topo',
-        text: 'Neural Topologies',
+        id: 'ai_mlp',
+        text: 'Multi-Layer Perceptrons',
         type: 'ai',
         parent: 'ai_base',
         shape: 'tape_label',
-        x: 420,
-        y: 280,
-        desc: 'Analyzing network patterns like ConvNets processing spatial grids and Recurrent structures mapping sequences.',
-        concepts: ['Weight sharing inside spatial kernels', 'Recurrent cell memory gates controls'],
+        x: 380,
+        y: 470,
+        desc: 'Building fully-connected neural feedforward layers, mapping input spaces to predictions via matrix weights.',
+        concepts: ['Fully-connected linear layer weights matrices', 'Loss function evaluations and backward pass updates'],
         papers: [
-            { title: 'Long Short-Term Memory', authors: 'S. Hochreiter, J. Schmidhuber (1997)', url: 'https://arxiv.org/pdf/cs/9706301.pdf' },
-            { title: 'Convolutional Neural Networks (CNNs) Explained', authors: 'Stanford CS231n Lecture (YouTube)', url: 'https://www.youtube.com/watch?v=vT1JzLTH4G4' }
+            { title: 'Neural Networks: Zero to Hero - Building Spells (MLP)', authors: 'Andrej Karpathy (YouTube Course)', url: 'https://www.youtube.com/watch?v=PaCmpygFfXo' }
+        ]
+    },
+    {
+        id: 'ai_cnn',
+        text: 'CNNs & Spatial Grids',
+        type: 'ai',
+        parent: 'ai_base',
+        shape: 'tape_label',
+        x: 490,
+        y: 430,
+        desc: 'Analyzing spatial patterns inside multi-dimensional grids using sliding kernel filters and pooling.',
+        concepts: ['Shared weights inside convolutional sliding filters', 'Pooling layers downsampling and translation invariance'],
+        papers: [
+            { title: 'Stanford CS231n: Convolutional Neural Networks for Visual Recognition', authors: 'Fei-Fei Li, Justin Johnson (YouTube Playlist)', url: 'https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv' }
+        ]
+    },
+    {
+        id: 'ai_rnn',
+        text: 'Recurrent Nets & LSTMs',
+        type: 'ai',
+        parent: 'ai_base',
+        shape: 'tape_label',
+        x: 500,
+        y: 350,
+        desc: 'Processing sequential data streams using recurrent feedback loops and memory gating mechanisms.',
+        concepts: ['Vanishing gradient mitigation via memory gates', 'Hidden state transitions across variable-length timelines'],
+        papers: [
+            { title: 'MIT 6.S191: Recurrent Neural Networks & Sequence Modeling', authors: 'Alexander Amini (YouTube Lecture)', url: 'https://www.youtube.com/watch?v=qjrad0V0uJE' }
+        ]
+    },
+    {
+        id: 'ai_embed',
+        text: 'Dense Embeddings',
+        type: 'ai',
+        parent: 'ai_base',
+        shape: 'tape_label',
+        x: 390,
+        y: 290,
+        desc: 'Projecting discrete linguistic tokens into low-dimensional continuous vector spaces representing semantics.',
+        concepts: ['Skip-gram and continuous bag-of-words architectures', 'Cosine similarity metric spaces for semantic relationships'],
+        papers: [
+            { title: 'Efficient Estimation of Word Representations in Vector Space (Word2Vec)', authors: 'T. Mikolov et al. (2013)', url: 'https://arxiv.org/pdf/1301.3781.pdf' },
+            { title: 'Word Embeddings and Word2Vec Explained', authors: 'StatQuest with Josh Starmer (YouTube Video)', url: 'https://www.youtube.com/watch?v=viZrOnJclY0' }
+        ]
+    },
+    {
+        id: 'ai_mem',
+        text: 'Memory Vectors & Indexes',
+        type: 'ai',
+        parent: 'ai_base',
+        shape: 'tape_label',
+        x: 380,
+        y: 370,
+        desc: 'Constructing persistent semantic memory stores via multidimensional indexing and similarity queries.',
+        concepts: ['Hierarchical Navigable Small World (HNSW) graph structures', 'Inner product and cosine similarity scoring scales'],
+        papers: [
+            { title: 'Vector Search Explained: From Embeddings to Vector Databases', authors: 'Pinecone / James Briggs (YouTube)', url: 'https://www.youtube.com/watch?v=klTvEwg3o14' }
         ]
     },
 
