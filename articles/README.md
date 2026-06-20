@@ -12,3 +12,5 @@ This folder contains deep-dive articles covering core concepts across system des
     *   Concepts: Vertical vs. Horizontal scaling, sharding, replication, cache-aside vs. write-through, load balancers, rate limiters, CDNs.
 4.  **[Multi-Agent System Design](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/multi_agent_design.md)**
     *   Concepts: Orchestrator-Worker patterns, Routing, Choreography, Agent State/Memory, runtime orchestration frameworks (LangGraph, AutoGen).
+5.  **[Real-World Engineering Case Studies](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/company_case_studies.md)**
+    *   Concepts: Google GFS/MapReduce/BigTable, Amazon DynamoDB Paper, LinkedIn Apache Kafka, Facebook Memcached Scaling, Netflix Chaos Engineering, Uber Ringpop SWIM Gossip.

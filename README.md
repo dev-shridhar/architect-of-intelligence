@@ -63,6 +63,7 @@ mindmap
     *   [neural_network_foundations.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/neural_network_foundations.md) - Deep learning backpropagation and optimization.
     *   [system_scaling.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/system_scaling.md) - Scaling databases, caching, and APIs.
     *   [multi_agent_design.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/multi_agent_design.md) - Multi-agent communication patterns and orchestration.
+    *   [company_case_studies.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/company_case_studies.md) - Real-world company engineering scaling case studies.
 *   [languages/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/languages/) - Guides and code patterns in systems languages.
     *   [README.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/languages/README.md) - Subdirectory index.
     *   [python/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/languages/python/) - Concurrency, GIL bypass, memory generators, and AI bindings.
@@ -73,6 +74,12 @@ mindmap
 ---
 
 ## 📚 Recommended Reading List
+
+### 📊 Data Structures & Algorithms (DSA)
+1.  **"Introduction to Algorithms"** (CLRS) by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein (The comprehensive academic standard for algorithms).
+2.  **"The Algorithm Design Manual"** by Steven S. Skiena (Excellent practical guide focusing on algorithm analysis and real-world designs).
+3.  **"Algorithms"** by Robert Sedgewick and Kevin Wayne (Focuses on fundamental data structures and graph/string algorithms with Java).
+4.  **"Grokking Algorithms"** by Aditya Bhargava (Highly visual, easy-to-understand introduction to core algorithms).
 
 ### 🏗️ System Architecture
 1.  **"Designing Data-Intensive Applications"** by Martin Kleppmann (The bible of distributed databases, storage models, and scaling).
