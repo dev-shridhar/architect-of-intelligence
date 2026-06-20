@@ -51,6 +51,7 @@ mindmap
 
 ## 📂 Repository Index
 
+*   [100_day_study_plan.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/100_day_study_plan.md) - **100-Day Study Plan**: Structured day-by-day learning curriculum.
 *   [research_papers/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/research_papers/) - Foundational research papers that defined distributed systems and AI.
     *   [top_100_papers.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/research_papers/top_100_papers.md) - **Top 100 AI Research Papers Catalog**.
     *   [neural_nets/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/research_papers/neural_nets/) - Neural networks, backprop, optimizations, and CNNs.
@@ -65,6 +66,7 @@ mindmap
     *   [multi_agent_design.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/multi_agent_design.md) - Multi-agent communication patterns and orchestration.
     *   [company_case_studies.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/company_case_studies.md) - Real-world company engineering scaling case studies.
     *   [ai_infrastructure_scaling.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/ai_infrastructure_scaling.md) - AI infrastructure serving, indexing, and distributed training.
+    *   [educative_learning_paths.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/educative_learning_paths.md) - Educative.io structured learning paths index for System Design & Agentic AI.
 *   [languages/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/languages/) - Guides and code patterns in systems languages.
     *   [README.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/languages/README.md) - Subdirectory index.
     *   [python/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/languages/python/) - Concurrency, GIL bypass, memory generators, and AI bindings.

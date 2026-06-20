@@ -16,3 +16,5 @@ This folder contains deep-dive articles covering core concepts across system des
     *   Concepts: Google GFS/MapReduce/BigTable, Amazon DynamoDB Paper, LinkedIn Apache Kafka, Facebook Memcached Scaling, Netflix Chaos Engineering, Uber Ringpop SWIM Gossip.
 6.  **[AI Infrastructure & MLOps Scaling](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/ai_infrastructure_scaling.md)**
     *   Concepts: Distributed training models (DDP, TP, PP, ZeRO), serving optimizations (quantization, continuous batching, PagedAttention), vector index topologies (HNSW, IVF-PQ).
+7.  **[Educative Learning Paths Guide](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/educative_learning_paths.md)**
+    *   Concepts: Educative.io structured tracks for System Design, ML System Design, Agentic AI Experts, CrewAI, LangChain, and Model Context Protocol (MCP).
