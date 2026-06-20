@@ -52,9 +52,11 @@ mindmap
 ## 📂 Repository Index
 
 *   [research_papers/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/research_papers/) - Foundational research papers that defined distributed systems and AI.
-    *   [README.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/research_papers/README.md) - Subdirectory index.
-    *   [algorithms/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/research_papers/algorithms/) - Key algorithms (Consensus, Optimization, Attention).
-    *   [architectures/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/research_papers/architectures/) - Foundational deep learning and distributed system architectures.
+    *   [top_100_papers.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/research_papers/top_100_papers.md) - **Top 100 AI Research Papers Catalog**.
+    *   [neural_nets/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/research_papers/neural_nets/) - Neural networks, backprop, optimizations, and CNNs.
+    *   [transformers/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/research_papers/transformers/) - Attention mechanisms, Transformers, and LLMs.
+    *   [memory_rag/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/research_papers/memory_rag/) - Memory, dense retrieval, and RAG.
+    *   [rl_agents/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/research_papers/rl_agents/) - Reinforcement learning, preference alignment, and autonomous agents.
 *   [articles/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/) - Deep-dives into key concepts.
     *   [README.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/README.md) - Subdirectory index.
     *   [distributed_systems.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/distributed_systems.md) - Consensus, replication, and data models.
