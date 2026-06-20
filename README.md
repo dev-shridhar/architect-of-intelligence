@@ -64,6 +64,7 @@ mindmap
     *   [system_scaling.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/system_scaling.md) - Scaling databases, caching, and APIs.
     *   [multi_agent_design.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/multi_agent_design.md) - Multi-agent communication patterns and orchestration.
     *   [company_case_studies.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/company_case_studies.md) - Real-world company engineering scaling case studies.
+    *   [ai_infrastructure_scaling.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/ai_infrastructure_scaling.md) - AI infrastructure serving, indexing, and distributed training.
 *   [languages/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/languages/) - Guides and code patterns in systems languages.
     *   [README.md](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/languages/README.md) - Subdirectory index.
     *   [python/](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/languages/python/) - Concurrency, GIL bypass, memory generators, and AI bindings.
@@ -116,3 +117,9 @@ mindmap
 *   Build a deep understanding of standard neural network architectures (MLPs, CNNs, Transformers).
 *   Learn optimization techniques for serving AI models: quantization, pruning, TensorRT, and batching.
 *   Build multi-agent designs and orchestrate memory models in LLM applications using stateful graphs.
+
+### Phase 4: AI Infrastructure & MLOps (Month 7-8)
+*   Understand multi-GPU parallelism models (DDP, Pipeline Parallelism, Tensor Parallelism, DeepSpeed ZeRO).
+*   Master production serving optimization strategies (PagedAttention, KV Caching, Continuous Batching).
+*   Scale vector indexing algorithms (HNSW, IVF-PQ) in vector database setups.
+

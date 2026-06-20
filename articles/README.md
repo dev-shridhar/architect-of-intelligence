@@ -14,3 +14,5 @@ This folder contains deep-dive articles covering core concepts across system des
     *   Concepts: Orchestrator-Worker patterns, Routing, Choreography, Agent State/Memory, runtime orchestration frameworks (LangGraph, AutoGen).
 5.  **[Real-World Engineering Case Studies](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/company_case_studies.md)**
     *   Concepts: Google GFS/MapReduce/BigTable, Amazon DynamoDB Paper, LinkedIn Apache Kafka, Facebook Memcached Scaling, Netflix Chaos Engineering, Uber Ringpop SWIM Gossip.
+6.  **[AI Infrastructure & MLOps Scaling](file:///Users/shridharkulkakrni/.gemini/antigravity-ide/scratch/architect-of-intelligence/articles/ai_infrastructure_scaling.md)**
+    *   Concepts: Distributed training models (DDP, TP, PP, ZeRO), serving optimizations (quantization, continuous batching, PagedAttention), vector index topologies (HNSW, IVF-PQ).
