@@ -480,7 +480,6 @@ function selectNode(node) {
     }
     
     // Deep links matching
-    document.getElementById('viewStudyPlan').href = `../100_day_study_plan.md`;
     document.getElementById('gitLink').href = `https://github.com/dev-shridhar/architect-of-intelligence`;
     
     detailsCard.classList.add('active');
