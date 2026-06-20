@@ -25,7 +25,9 @@ const NODES = [
             'Full Systems Engineering execution',
             'Advanced Model orchestrations & inference bindings'
         ],
-        papers: []
+        papers: [
+            { title: 'System Design for AI Engineers and Architects', authors: 'Hussein Nasser / TechWorld (YouTube)', url: 'https://www.youtube.com/watch?v=R873BlNVUB4' }
+        ]
     },
 
     // Level 1: Category Hubs (represented as large torn newspaper headings)
@@ -43,7 +45,9 @@ const NODES = [
             'Async event loops and non-blocking sockets execution',
             'High-throughput bindings for machine learning computation'
         ],
-        papers: []
+        papers: [
+            { title: 'Computer Science & Programming Fundamentals Course', authors: 'CS50 Harvard (YouTube Course)', url: 'https://www.youtube.com/playlist?list=PLhQjrBD2T382_R182fhXOhyDcPkAsGoVM' }
+        ]
     },
     {
         id: 'arch',
@@ -59,7 +63,9 @@ const NODES = [
             'Consistent hashing and database partition sharding',
             'API Gateways, reverse proxies, and rate control structures'
         ],
-        papers: []
+        papers: [
+            { title: 'System Design Course for Beginners', authors: 'FreeCodeCamp / Developer Roadmaps (YouTube Course)', url: 'https://www.youtube.com/watch?v=m8I0fJipeCc' }
+        ]
     },
     {
         id: 'ai',
@@ -75,7 +81,9 @@ const NODES = [
             'Transformer networks self-attention matrices calculations',
             'Cyclic loops multi-agent execution graphs'
         ],
-        papers: []
+        papers: [
+            { title: 'AI for Everyone Course', authors: 'Andrew Ng / DeepLearning.AI (YouTube Playlist)', url: 'https://www.youtube.com/playlist?list=PLkDaE6sC76OT6715fF1Sg0n6e5wO_gHEx' }
+        ]
     },
 
     // Level 2: Sub-Hubs under Systems Programming
@@ -93,7 +101,9 @@ const NODES = [
             'Asyncio event loop structures',
             'Pybind11 C-extension wrappers'
         ],
-        papers: []
+        papers: [
+            { title: 'Python Programming Full Course', authors: 'FreeCodeCamp / Programming with Mosh (YouTube)', url: 'https://www.youtube.com/watch?v=_uQrJ0TkZlc' }
+        ]
     },
     {
         id: 'go',
@@ -109,7 +119,9 @@ const NODES = [
             'Channels for safe memory communications',
             'High-throughput microservices APIs'
         ],
-        papers: []
+        papers: [
+            { title: 'Go Programming Tutorial for Beginners', authors: 'FreeCodeCamp / Tech with Tim (YouTube)', url: 'https://www.youtube.com/watch?v=YS4e4q9oBaU' }
+        ]
     },
     {
         id: 'cpp',
@@ -125,7 +137,9 @@ const NODES = [
             'CUDA kernel threads mapping',
             'Compilers optimizations and SIMD alignments'
         ],
-        papers: []
+        papers: [
+            { title: 'C++ Programming Full Course', authors: 'The Cherno (YouTube Course Playlist)', url: 'https://www.youtube.com/playlist?list=PLlrATfgbY1gpN0714n8vJ4xegM8QWzSFG' }
+        ]
     },
     {
         id: 'rust',
@@ -141,7 +155,9 @@ const NODES = [
             'Tokio async execution runtimes',
             'WASM compilation for edge inference containers'
         ],
-        papers: []
+        papers: [
+            { title: 'Rust Programming Course for Beginners', authors: 'FreeCodeCamp (YouTube Video)', url: 'https://www.youtube.com/watch?v=BpPEoGMzHyA' }
+        ]
     },
 
     // Level 3: Python Leaf Nodes & linked papers
@@ -376,7 +392,9 @@ const NODES = [
             'SQL read replica sync loops',
             'NewSQL global atomic clocks consensus'
         ],
-        papers: []
+        papers: [
+            { title: 'Database Systems & Architecture Lecture Series', authors: 'CMU Database Group / Andy Pavlo (YouTube)', url: 'https://www.youtube.com/playlist?list=PLSE8ODhjFmxmas09J33vX4bF28f_d90jR' }
+        ]
     },
     {
         id: 'obs',
@@ -392,7 +410,9 @@ const NODES = [
             'Prometheus polling pull metrics collections',
             'Chaos monkey fault injection simulations'
         ],
-        papers: []
+        papers: [
+            { title: 'Observability in Modern Distributed Systems', authors: 'Charity Majors / Honeycomb (YouTube Lecture)', url: 'https://www.youtube.com/watch?v=F0L1WbS19K4' }
+        ]
     },
     {
         id: 'arch_lld',
@@ -408,7 +428,9 @@ const NODES = [
             'Creational, Structural, and Behavioral patterns',
             'UML class diagrams and interface specifications'
         ],
-        papers: []
+        papers: [
+            { title: 'Low-Level Design (LLD) Boot Camp & Patterns', authors: 'Karan S. (YouTube Course Playlist)', url: 'https://www.youtube.com/playlist?list=PL6W8xrUL92_yyG6n9v1n1fT97pPgp5_2b' }
+        ]
     },
     {
         id: 'arch_hld',
@@ -424,7 +446,9 @@ const NODES = [
             'Event-driven messaging and pub-sub pipelines',
             'High availability and disaster recovery planning'
         ],
-        papers: []
+        papers: [
+            { title: 'High-Level Design (HLD) Masterclass', authors: 'Gaurav Sen / System Design (YouTube)', url: 'https://www.youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPy92c' }
+        ]
     },
 
     // Level 3: Distributed Systems Leaf Nodes (linked to corresponding papers & courses)
@@ -749,7 +773,9 @@ const NODES = [
             'Model optimization engines (TensorRT, vLLM)',
             'Vector index search grids'
         ],
-        papers: []
+        papers: [
+            { title: 'MLOps Zoomcamp - Machine Learning Operations Course', authors: 'DataTalksClub (YouTube Playlist)', url: 'https://www.youtube.com/playlist?list=PL3MmuxUbc_hI7xK5DxKiObmRQPzX_bN2g' }
+        ]
     },
     {
         id: 'llm_adv',
@@ -765,7 +791,9 @@ const NODES = [
             'Preference alignment (DPO, RLHF)',
             'Agentic loops with tools access (ReAct)'
         ],
-        papers: []
+        papers: [
+            { title: 'Advanced LLM Fine-Tuning & Prompt Engineering', authors: 'DeepLearning.AI / Andrew Ng (YouTube Guide)', url: 'https://www.youtube.com/playlist?list=PLkDaE6sC76OUc48P9hX9g7L3lshP6tJ6G' }
+        ]
     },
 
     // Level 3: Deep Learning Leaf Nodes
