@@ -140,13 +140,8 @@ function drawPushpin(c, x, y, color = '#c0392b') {
 
 // Master Draw Loop
 function draw() {
-    if (!corkPattern) {
-        createCorkTexture();
-    }
-    
-    // Clear & draw corkboard pattern
-    ctx.fillStyle = corkPattern;
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    // Clear canvas to reveal CSS background wall
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     
     // Draw outer wooden frame shadow
     ctx.save();
