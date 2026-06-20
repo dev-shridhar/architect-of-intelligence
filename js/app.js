@@ -1,11 +1,11 @@
 // Theme mappings for the classification legend & paper node decorations
 const THEMES = {
-    programming: { bg: '#ebd2b4', border: '#c0392b', badge: 'programming', name: 'Programming', stringColor: '#c0392b' },
-    architecture: { bg: '#e0cfa9', border: '#d35400', badge: 'architecture', name: 'System Architecture', stringColor: '#d35400' },
-    ai: { bg: '#d4e6cf', border: '#27ae60', badge: 'ai', name: 'Artificial Intelligence', stringColor: '#27ae60' },
-    dsa: { bg: '#d6e4f0', border: '#2980b9', badge: 'dsa', name: 'DSA & Algorithms', stringColor: '#2980b9' },
-    devops: { bg: '#e8dbf2', border: '#8e44ad', badge: 'devops', name: 'Big Data & DevOps', stringColor: '#8e44ad' },
-    root: { bg: '#f5eedc', border: '#7f8c8d', badge: 'root', name: 'Root Board', stringColor: '#7f8c8d' }
+    programming: { bg: '#d3c0ad', border: '#7f3830', badge: 'programming', name: 'Programming', stringColor: '#8e3d36' },
+    architecture: { bg: '#cdbfab', border: '#8c4d28', badge: 'architecture', name: 'System Architecture', stringColor: '#9e5933' },
+    ai: { bg: '#c3ccbf', border: '#3a6b46', badge: 'ai', name: 'Artificial Intelligence', stringColor: '#477c55' },
+    dsa: { bg: '#c4cbd1', border: '#325d7c', badge: 'dsa', name: 'DSA & Algorithms', stringColor: '#3f6b8c' },
+    devops: { bg: '#ccbfd2', border: '#5c3d6c', badge: 'devops', name: 'Big Data & DevOps', stringColor: '#6e4f80' },
+    root: { bg: '#e2d9c4', border: '#5e6366', badge: 'root', name: 'Root Board', stringColor: '#6c7275' }
 };
 
 // Comprehensive expanded curriculum dataset reflecting the detective-board node graph

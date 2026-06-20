@@ -34,34 +34,33 @@ function createCorkTexture() {
     tempCanvas.height = 256;
     const tempCtx = tempCanvas.getContext('2d');
     
-    // Base cork warm color
-    tempCtx.fillStyle = '#bc9673';
+    // Dark desaturated old cork base
+    tempCtx.fillStyle = '#423225';
     tempCtx.fillRect(0, 0, 256, 256);
     
-    // Draw fine organic noise specks
+    // Draw fine organic noise specks (desaturated dark and dusty grey-brown)
     for (let i = 0; i < 15000; i++) {
         const x = Math.random() * 256;
         const y = Math.random() * 256;
         const size = Math.random() * 1.5;
-        // Random dark and light brown spots
         const rand = Math.random();
         if (rand < 0.5) {
-            tempCtx.fillStyle = 'rgba(109, 78, 51, ' + (Math.random() * 0.15 + 0.05) + ')';
+            tempCtx.fillStyle = 'rgba(18, 12, 8, ' + (Math.random() * 0.15 + 0.05) + ')';
         } else {
-            tempCtx.fillStyle = 'rgba(235, 210, 180, ' + (Math.random() * 0.2 + 0.05) + ')';
+            tempCtx.fillStyle = 'rgba(95, 82, 72, ' + (Math.random() * 0.15 + 0.05) + ')';
         }
         tempCtx.beginPath();
         tempCtx.arc(x, y, size, 0, Math.PI * 2);
         tempCtx.fill();
     }
     
-    // Draw wood pulp patches
+    // Draw aged wood pulp patches
     for (let i = 0; i < 40; i++) {
         const x = Math.random() * 256;
         const y = Math.random() * 256;
         const w = Math.random() * 15 + 5;
         const h = Math.random() * 8 + 3;
-        tempCtx.fillStyle = 'rgba(120, 85, 55, 0.08)';
+        tempCtx.fillStyle = 'rgba(25, 18, 12, 0.2)';
         tempCtx.beginPath();
         tempCtx.ellipse(x, y, w, h, Math.random() * Math.PI, 0, Math.PI * 2);
         tempCtx.fill();
@@ -368,11 +367,11 @@ function draw() {
 
 // Mapping colors inside clippings
 function varColorText(badge) {
-    if (badge === 'programming') return '#78281f';
-    if (badge === 'architecture') return '#7e5109';
-    if (badge === 'ai') return '#196f3d';
-    if (badge === 'dsa') return '#1b4f72';
-    if (badge === 'devops') return '#4a235a';
+    if (badge === 'programming') return '#5a211b';
+    if (badge === 'architecture') return '#5c3d0b';
+    if (badge === 'ai') return '#22482e';
+    if (badge === 'dsa') return '#213d52';
+    if (badge === 'devops') return '#381e43';
     return '#1c1c1e';
 }
 
